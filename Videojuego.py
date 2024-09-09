@@ -1,5 +1,607 @@
 from random import *
-import videojuegoforDB
+#Cambios hechos en otra plataforma*
+
+
+def EfectosPorTiempo1 (number):
+    if number.efecto1 == 'avida':
+        number.maxhealth -= number.efecton1
+        number.health -= number.efecton1
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto1 == 'avidapor':
+        number.maxhealth = number.maxhealth - number.maxhealth * number.efecton1 / 100
+        number.health = number.health - number.health * number.efecton1 / 100
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto1 == 'bvida':
+        number.maxhealth += number.efecton1
+        number.health += number.efecton1
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto1 == 'bvidapor':
+        number.maxhealth = number.maxhealth + number.maxhealth * number.efecton1 / 100
+        number.health = number.health + number.health * number.efecton1 / 100
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto1 == 'cura':
+        number.health += number.efecton1
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto1 == 'curapor':
+        number.health = number.health + number.health * number.efecton1 / 100
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto1 == 'daño':
+        number.health -= number.efecton1
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto1 == 'dañopor':
+        number.health = number.health - number.health * number.efecton1 / 100
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto1 == 'adefense':
+        number.defense -= number.efecton1
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto1 == 'adefensepor':
+        number.defense = number.defense - number.defense * number.efecton1 / 100
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto1 == 'bdefense':
+        number.defense += number.efecton1
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto1 == 'bdefensepor':
+        number.defense = number.defense + number.defense * number.efecton1 / 100
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto1 == 'apower':
+        number.power -= number.efecton1
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto1 == 'apowerpor':
+        number.power = number.power - number.power * number.efecton1 / 100
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto1 == 'bpower':
+        number.power += number.efecton1
+        print ('Se te ha acabado tu reducción de poder')
+
+    elif number.efecto1 == 'bpowerpor':
+        number.power = number.power + number.power * number.efecton1 / 100
+        print ('Se te ha acabado tu reducción de poder')
+
+def EfectosPorTiempo2 (number):
+    if number.efecto2 == 'avida':
+        number.maxhealth -= number.efecton2
+        number.health -= number.efecton2
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto2 == 'avidapor':
+        number.maxhealth = number.maxhealth - number.maxhealth * number.efecton2 / 100
+        number.health = number.health - number.health * number.efecton2 / 100
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto2 == 'bvida':
+        number.maxhealth += number.efecton2
+        number.health += number.efecton2
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto2 == 'bvidapor':
+        number.maxhealth = number.maxhealth + number.maxhealth * number.efecton2 / 100
+        number.health = number.health + number.health * number.efecton2 / 100
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto2 == 'cura':
+        number.health += number.efecton2
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto2 == 'curapor':
+        number.health = number.health + number.health * number.efecton2 / 100
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto2 == 'daño':
+        number.health -= number.efecton2
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto2 == 'dañopor':
+        number.health = number.health - number.health * number.efecton2 / 100
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto2 == 'adefense':
+        number.defense -= number.efecton2
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto2 == 'adefensepor':
+        number.defense = number.defense - number.defense * number.efecton2 / 100
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto2 == 'bdefense':
+        number.defense += number.efecton2
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto2 == 'bdefensepor':
+        number.defense = number.defense + number.defense * number.efecton2 / 100
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto2 == 'apower':
+        number.power -= number.efecton2
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto2 == 'apowerpor':
+        number.power = number.power - number.power * number.efecton2 / 100
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto2 == 'bpower':
+        number.power += number.efecton2
+        print ('Se te ha acabado tu reducción de poder')
+
+    elif number.efecto2 == 'bpowerpor':
+        number.power = number.power + number.power * number.efecton2 / 100
+        print ('Se te ha acabado tu reducción de poder')
+
+def EfectosPorTiempo3 (number):
+    if number.efecto3 == 'avida':
+        number.maxhealth -= number.efecton3
+        number.health -= number.efecton3
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto3 == 'avidapor':
+        number.maxhealth = number.maxhealth - number.maxhealth * number.efecton3 / 100
+        number.health = number.health - number.health * number.efecton3 / 100
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto3 == 'bvida':
+        number.maxhealth += number.efecton3
+        number.health += number.efecton3
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto3 == 'bvidapor':
+        number.maxhealth = number.maxhealth + number.maxhealth * number.efecton3 / 100
+        number.health = number.health + number.health * number.efecton3 / 100
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto3 == 'cura':
+        number.health += number.efecton3
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto3 == 'curapor':
+        number.health = number.health + number.health * number.efecton3 / 100
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto3 == 'daño':
+        number.health -= number.efecton3
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto3 == 'dañopor':
+        number.health = number.health - number.health * number.efecton3 / 100
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto3 == 'adefense':
+        number.defense -= number.efecton3
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto3 == 'adefensepor':
+        number.defense = number.defense - number.defense * number.efecton3 / 100
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto3 == 'bdefense':
+        number.defense += number.efecton3
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto3 == 'bdefensepor':
+        number.defense = number.defense + number.defense * number.efecton3 / 100
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto3 == 'apower':
+        number.power -= number.efecton3
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto3 == 'apowerpor':
+        number.power = number.power - number.power * number.efecton3 / 100
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto3 == 'bpower':
+        number.power += number.efecton3
+        print ('Se te ha acabado tu reducción de poder')
+
+    elif number.efecto3 == 'bpowerpor':
+        number.power = number.power + number.power * number.efecton3 / 100
+        print ('Se te ha acabado tu reducción de poder')
+
+def EfectosPorTiempo4 (number):
+    if number.efecto4 == 'avida':
+        number.maxhealth -= number.efecton4
+        number.health -= number.efecton4
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto4 == 'avidapor':
+        number.maxhealth = number.maxhealth - number.maxhealth * number.efecton4 / 100
+        number.health = number.health - number.health * number.efecton4 / 100
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto4 == 'bvida':
+        number.maxhealth += number.efecton4
+        number.health += number.efecton4
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto4 == 'bvidapor':
+        number.maxhealth = number.maxhealth + number.maxhealth * number.efecton4 / 100
+        number.health = number.health + number.health * number.efecton4 / 100
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto4 == 'cura':
+        number.health += number.efecton4
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto4 == 'curapor':
+        number.health = number.health + number.health * number.efecton4 / 100
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto4 == 'daño':
+        number.health -= number.efecton4
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto4 == 'dañopor':
+        number.health = number.health - number.health * number.efecton4 / 100
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto4 == 'adefense':
+        number.defense -= number.efecton4
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto4 == 'adefensepor':
+        number.defense = number.defense - number.defense * number.efecton4 / 100
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto4 == 'bdefense':
+        number.defense += number.efecton4
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto4 == 'bdefensepor':
+        number.defense = number.defense + number.defense * number.efecton4 / 100
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto4 == 'apower':
+        number.power -= number.efecton4
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto4 == 'apowerpor':
+        number.power = number.power - number.power * number.efecton4 / 100
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto4 == 'bpower':
+        number.power += number.efecton4
+        print ('Se te ha acabado tu reducción de poder')
+
+    elif number.efecto4 == 'bpowerpor':
+        number.power = number.power + number.power * number.efecton4 / 100
+        print ('Se te ha acabado tu reducción de poder')
+    
+def EfectosPorTiempo5 (number):
+    if number.efecto1 == 'avida':
+        number.maxhealth -= number.efecton5
+        number.health -= number.efecton5
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto5 == 'avidapor':
+        number.maxhealth = number.maxhealth - number.maxhealth * number.efecton5 / 100
+        number.health = number.health - number.health * number.efecton5 / 100
+        print ('Se te ha acabado tu aumento de vida')
+
+    elif number.efecto5 == 'bvida':
+        number.maxhealth += number.efecton5
+        number.health += number.efecton5
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto5 == 'bvidapor':
+        number.maxhealth = number.maxhealth + number.maxhealth * number.efecton5 / 100
+        number.health = number.health + number.health * number.efecton5 / 100
+        print ('Se te ha acabado tu reducción de vida')
+
+    elif number.efecto5 == 'cura':
+        number.health += number.efecton5
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto5 == 'curapor':
+        number.health = number.health + number.health * number.efecton5 / 100
+        print ('Se te ha aplicado la curación')
+
+    elif number.efecto5 == 'daño':
+        number.health -= number.efecton5
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto5 == 'dañopor':
+        number.health = number.health - number.health * number.efecton5 / 100
+        print ('Se te ha aplicado el daño')
+
+    elif number.efecto5 == 'adefense':
+        number.defense -= number.efecton5
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto5 == 'adefensepor':
+        number.defense = number.defense - number.defense * number.efecton5 / 100
+        print ('Se te ha acabado tu aumento de defensa')
+
+    elif number.efecto5 == 'bdefense':
+        number.defense += number.efecton5
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto5 == 'bdefensepor':
+        number.defense = number.defense + number.defense * number.efecton5 / 100
+        print ('Se te ha acabado tu reducción de defensa')
+
+    elif number.efecto5 == 'apower':
+        number.power -= number.efecton5
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto5 == 'apowerpor':
+        number.power = number.power - number.power * number.efecton5 / 100
+        print ('Se te ha acabado tu aumento de poder')
+
+    elif number.efecto5 == 'bpower':
+        number.power += number.efecton5
+        print ('Se te ha acabado tu reducción de poder')
+
+    elif number.efecto5 == 'bpowerpor':
+        number.power = number.power + number.power * number.efecton5 / 100
+        print ('Se te ha acabado tu reducción de poder')
+
+def EfectosPorTiempoComprobando11 ():
+    if uno.efecto1 != '':
+        if uno.tiempo1 == uno.nturnos:
+            EfectosPorTiempo1 (uno)
+
+def EfectosPorTiempoComprobando12 ():
+    if uno.efecto2 != '':
+        if uno.tiempo2 == uno.nturnos:
+            EfectosPorTiempo2 (uno)
+
+def EfectosPorTiempoComprobando13 ():
+    if uno.efecto3 != '':
+        if uno.tiempo3 == uno.nturnos:
+            EfectosPorTiempo3 (uno)
+
+def EfectosPorTiempoComprobando14 ():
+    if uno.efecto4 != '':
+        if uno.tiempo4 == uno.nturnos:
+            EfectosPorTiempo4 (uno)
+
+def EfectosPorTiempoComprobando15 ():
+    if uno.efecto5 != '':
+        if uno.tiempo5 == uno.nturnos:
+            EfectosPorTiempo5 (uno)
+
+def EfectosPorTiempoComprobando21 ():
+    if dos.efecto1 != '':
+        if dos.tiempo1 == dos.nturnos:
+            EfectosPorTiempo1 (dos)
+
+def EfectosPorTiempoComprobando22 ():
+    if dos.efecto2 != '':
+        if dos.tiempo2 == dos.nturnos:
+            EfectosPorTiempo2 (dos)
+
+def EfectosPorTiempoComprobando23 ():
+    if dos.efecto3 != '':
+        if dos.tiempo3 == dos.nturnos:
+            EfectosPorTiempo3 (dos)
+
+def EfectosPorTiempoComprobando24 ():
+    if dos.efecto4 != '':
+        if dos.tiempo4 == dos.nturnos:
+            EfectosPorTiempo4 (dos)
+
+def EfectosPorTiempoComprobando25 ():
+    if dos.efecto5 != '':
+        if dos.tiempo5 == dos.nturnos:
+            EfectosPorTiempo5 (dos)
+
+def EfectosPorTiempoComprobando31 ():
+    if tres.efecto1 != '':
+        if tres.tiempo1 == tres.nturnos:
+            EfectosPorTiempo1 (tres)
+
+def EfectosPorTiempoComprobando32 ():
+    if tres.efecto2 != '':
+        if tres.tiempo2 == tres.nturnos:
+            EfectosPorTiempo2 (tres)
+
+def EfectosPorTiempoComprobando33 ():
+    if tres.efecto3 != '':
+        if tres.tiempo3 == tres.nturnos:
+            EfectosPorTiempo3 (tres)
+
+def EfectosPorTiempoComprobando34 ():
+    if tres.efecto4 != '':
+        if tres.tiempo4 == tres.nturnos:
+            EfectosPorTiempo4 (tres)
+
+def EfectosPorTiempoComprobando35 ():
+    if tres.efecto5 != '':
+        if tres.tiempo5 == tres.nturnos:
+            EfectosPorTiempo5 (tres)
+
+def EfectosPorTiempoComprobando41 ():
+    if cuatro.efecto1 != '':
+        if cuatro.tiempo1 == cuatro.nturnos:
+            EfectosPorTiempo1 (cuatro)
+
+def EfectosPorTiempoComprobando42 ():
+    if cuatro.efecto2 != '':
+        if cuatro.tiempo2 == cuatro.nturnos:
+            EfectosPorTiempo2 (cuatro)
+
+def EfectosPorTiempoComprobando43 ():
+    if cuatro.efecto3 != '':
+        if cuatro.tiempo3 == cuatro.nturnos:
+            EfectosPorTiempo3 (cuatro)
+
+def EfectosPorTiempoComprobando44 ():
+    if cuatro.efecto4 != '':
+        if cuatro.tiempo4 == cuatro.nturnos:
+            EfectosPorTiempo4 (cuatro)
+
+def EfectosPorTiempoComprobando45 ():
+    if uno.efecto5 != '':
+        if uno.tiempo5 == uno.nturnos:
+            EfectosPorTiempo5 (uno)
+
+def EfectosPorTiempoComprobando51 ():
+    if cinco.efecto1 != '':
+        if cinco.tiempo1 == cinco.nturnos:
+            EfectosPorTiempo1 (cinco)
+
+def EfectosPorTiempoComprobando52 ():
+    if cinco.efecto2 != '':
+        if cinco.tiempo2 == cinco.nturnos:
+            EfectosPorTiempo2 (cinco)
+
+def EfectosPorTiempoComprobando53 ():
+    if cinco.efecto3 != '':
+        if cinco.tiempo3 == cinco.nturnos:
+            EfectosPorTiempo3 (cinco)
+
+def EfectosPorTiempoComprobando54 ():
+    if cinco.efecto4 != '':
+        if cinco.tiempo4 == cinco.nturnos:
+            EfectosPorTiempo4 (cinco)
+
+def EfectosPorTiempoComprobando55 ():
+    if cinco.efecto5 != '':
+        if cinco.tiempo5 == cinco.nturnos:
+            EfectosPorTiempo5 (cinco)
+
+def EfectosPorTiempoComprobando61 ():
+    if seis.efecto1 != '':
+        if seis.tiempo1 == seis.nturnos:
+            EfectosPorTiempo1 (seis)
+
+def EfectosPorTiempoComprobando62 ():
+    if seis.efecto2 != '':
+        if seis.tiempo2 == seis.nturnos:
+            EfectosPorTiempo2 (seis)
+
+def EfectosPorTiempoComprobando63 ():
+    if seis.efecto3 != '':
+        if seis.tiempo3 == seis.nturnos:
+            EfectosPorTiempo3 (seis)
+
+def EfectosPorTiempoComprobando64 ():
+    if seis.efecto4 != '':
+        if seis.tiempo4 == seis.nturnos:
+            EfectosPorTiempo4 (seis)
+
+def EfectosPorTiempoComprobando65 ():
+    if seis.efecto5 != '':
+        if seis.tiempo5 == seis.nturnos:
+            EfectosPorTiempo5 (seis)
+
+def EfectosPorTiempoComprobandobb1 ():
+    if boxblue.efecto1 != '':
+        if boxblue.tiempo1 == boxblue.nturnos:
+            EfectosPorTiempo1 (boxblue)
+
+def EfectosPorTiempoComprobandobb2 ():
+    if boxblue.efecto2 != '':
+        if boxblue.tiempo2 == boxblue.nturnos:
+            EfectosPorTiempo2 (boxblue)
+
+def EfectosPorTiempoComprobandobb3 ():
+    if boxblue.efecto3 != '':
+        if boxblue.tiempo3 == boxblue.nturnos:
+            EfectosPorTiempo3 (boxblue)
+
+def EfectosPorTiempoComprobandobb4 ():
+    if boxblue.efecto4 != '':
+        if boxblue.tiempo4 == boxblue.nturnos:
+            EfectosPorTiempo4 (boxblue)
+
+def EfectosPorTiempoComprobandobb5 ():
+    if boxblue.efecto5 != '':
+        if boxblue.tiempo5 == boxblue.nturnos:
+            EfectosPorTiempo5 (boxblue)
+
+def EfectosPorTiempoComprobandobr1 ():
+    if boxred.efecto1 != '':
+        if boxred.tiempo1 == boxred.nturnos:
+            EfectosPorTiempo1 (boxred)
+
+def EfectosPorTiempoComprobandobr2 ():
+    if boxred.efecto2 != '':
+        if boxred.tiempo2 == boxred.nturnos:
+            EfectosPorTiempo2 (boxred)
+
+def EfectosPorTiempoComprobandobr3 ():
+    if boxred.efecto3 != '':
+        if boxred.tiempo3 == boxred.nturnos:
+            EfectosPorTiempo3 (boxred)
+
+def EfectosPorTiempoComprobandobr4 ():
+    if boxred.efecto4 != '':
+        if boxred.tiempo4 == boxred.nturnos:
+            EfectosPorTiempo4 (boxred)
+
+def EfectosPorTiempoComprobandobr5 ():
+    if boxred.efecto5 != '':
+        if boxred.tiempo5 == boxred.nturnos:
+            EfectosPorTiempo5 (boxred)
+
+def tempo1 ():
+    EfectosPorTiempoComprobando11()
+    EfectosPorTiempoComprobando12()
+    EfectosPorTiempoComprobando13()
+    EfectosPorTiempoComprobando14()
+    EfectosPorTiempoComprobando15()
+
+def tempo2 ():
+    EfectosPorTiempoComprobando21()
+    EfectosPorTiempoComprobando22()
+    EfectosPorTiempoComprobando23()
+    EfectosPorTiempoComprobando24()
+    EfectosPorTiempoComprobando25()
+
+def tempo3 ():
+    EfectosPorTiempoComprobando31()
+    EfectosPorTiempoComprobando32()
+    EfectosPorTiempoComprobando33()
+    EfectosPorTiempoComprobando34()
+    EfectosPorTiempoComprobando35()
+
+def tempo4 ():
+    EfectosPorTiempoComprobando41()
+    EfectosPorTiempoComprobando42()
+    EfectosPorTiempoComprobando43()
+    EfectosPorTiempoComprobando44()
+    EfectosPorTiempoComprobando45()
+
+def tempo5 ():
+    EfectosPorTiempoComprobando51()
+    EfectosPorTiempoComprobando52()
+    EfectosPorTiempoComprobando53()
+    EfectosPorTiempoComprobando54()
+    EfectosPorTiempoComprobando55()
+
+def tempo6 ():
+    EfectosPorTiempoComprobando61()
+    EfectosPorTiempoComprobando62()
+    EfectosPorTiempoComprobando63()
+    EfectosPorTiempoComprobando64()
+    EfectosPorTiempoComprobando65()
+
+def tempoboxblue ():
+    EfectosPorTiempoComprobandobb1()
+    EfectosPorTiempoComprobandobb2()
+    EfectosPorTiempoComprobandobb3()
+    EfectosPorTiempoComprobandobb4()
+    EfectosPorTiempoComprobandobb5()
+
+def tempoboxred ():
+    EfectosPorTiempoComprobandobr1()
+    EfectosPorTiempoComprobandobr2()
+    EfectosPorTiempoComprobandobr3()
+    EfectosPorTiempoComprobandobr4()
+    EfectosPorTiempoComprobandobr5()
 
 def checar_campos ():
     if campo.lluvia > 0:
@@ -455,8 +1057,37 @@ def eliminar_cargas6 ():
     seis.carga_veneno = 0
     print ('Se purifica el ambiente', '\n')
 
+def cargas (cargadoo):
+    if cargadoo.carga_veneno >= 10 and cargadoo.name != 'Caja Azul' and cargadoo.name != 'Caja Roja':
+        print (cargadoo.name, 'está tan lleno de veneno que acaba por morir')
+        cargadoo.health = -10000
+    if cargadoo.carga_sangrado >= 3:
+        print ('Tanto sangrado provoca una hemorragia en', cargadoo.name)
+        cargadoo.carga_hemorragia += 1
+        cargadoo.carga_sangrado -= 3
+    if cargadoo.carga_veneno >= 1:
+        print ('El veneno inflige', 5 * cargadoo.carga_veneno, 'a', cargadoo.name)
+        cargadoo.health -= 5 * cargadoo.carga_veneno
+    if cargadoo.carga_quemado >= 1:
+        print ('La quemadura inflige', 46 * cargadoo.carga_quemado, 'a', cargadoo.name)
+        cargadoo.health -= 46 * cargadoo.carga_quemado
+    if cargadoo.carga_sangrado >= 1:
+        print ('El sangrado inflige', 20 * cargadoo.carga_sangrado, 'a', cargadoo.name)
+        cargadoo.health -= 20 * cargadoo.carga_sangrado
+    if cargadoo.carga_hemorragia >= 1:
+        print ('La hemorragia inflige', 80 * cargadoo.carga_hemorragia, 'a', cargadoo.name)
+        cargadoo.health -= 80 * cargadoo.carga_hemorragia
+    if cargadoo.carga_maldita >= 1:
+        print ('La maldición inflige', 32 * cargadoo.carga_maldita, 'a', cargadoo.name)
+        cargadoo.health -= 32 * cargadoo.carga_maldita
+    if cargadoo.health > 0:
+        if cargadoo.carga_cura >= 1:
+            print ('Tus cargas te curan', 28 * cargadoo.carga_cura, 'puntos de vida')
+            cargadoo.health += 28 * cargadoo.carga_cura
+
 def playone2 ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if uno.health <= 0:
             break
@@ -500,10 +1131,14 @@ def playone2 ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    campo.trrr = 6
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos2 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -532,6 +1167,7 @@ def playone2 ():
                 print (uno.name, 'murió en su turno')
 def playone2random ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if uno.health <= 0:
             break
@@ -560,10 +1196,14 @@ def playone2random ():
                 eliminar_cargas2 ()
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    campo.trrr = 6
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos2 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -597,6 +1237,7 @@ def playone2random ():
                 print (uno.name, 'murió en su turno')
 def playtwo2 ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if dos.health <= 0:
             break
@@ -640,10 +1281,14 @@ def playtwo2 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    campo.trrr = 6
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos2 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -672,6 +1317,7 @@ def playtwo2 ():
                 print (dos.name, 'murió en su turno')
 def playtwo2random ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if dos.health <= 0:
             break
@@ -705,10 +1351,14 @@ def playtwo2random ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    campo.trrr = 6
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos2 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -737,6 +1387,7 @@ def playtwo2random ():
                 print (dos.name, 'murió en su turno')
 def playone3 ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -783,11 +1434,15 @@ def playone3 ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -837,11 +1492,15 @@ def playone3 ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -876,6 +1535,7 @@ def playone3 ():
                     print (uno.name, 'murió en su turno')
 def playone3random ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -910,11 +1570,15 @@ def playone3random ():
                 objective = tres
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -952,11 +1616,15 @@ def playone3random ():
                 objective = tres
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -991,6 +1659,7 @@ def playone3random ():
                     print (uno.name, 'murió en su turno')
 def playtwo3 ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1037,11 +1706,15 @@ def playtwo3 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1091,11 +1764,15 @@ def playtwo3 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1130,6 +1807,7 @@ def playtwo3 ():
                     print (dos.name, 'murió en su turno')
 def playtwo3random ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1164,11 +1842,15 @@ def playtwo3random ():
                 objective = tres
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1206,11 +1888,15 @@ def playtwo3random ():
                 objective = tres
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1245,6 +1931,7 @@ def playtwo3random ():
                     print (dos.name, 'murió en su turno')
 def playthree3 ():
     tres.nturnos += 1
+    tempo3()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1291,11 +1978,15 @@ def playthree3 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1345,11 +2036,15 @@ def playthree3 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1384,6 +2079,7 @@ def playthree3 ():
                     print (tres.name, 'murió en su turno')
 def playthree3random ():
     tres.nturnos += 1
+    tempo3()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1418,11 +2114,15 @@ def playthree3random ():
                 objective = tres
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1460,11 +2160,15 @@ def playthree3random ():
                 objective = tres
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    campo.trrr = 9
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos3 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1499,6 +2203,7 @@ def playthree3random ():
                     print (tres.name, 'murió en su turno')
 def playone4 ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1550,12 +2255,16 @@ def playone4 ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1610,12 +2319,16 @@ def playone4 ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1651,6 +2364,7 @@ def playone4 ():
                     print (uno.name, 'murió en su turno')
 def playone4random ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1688,12 +2402,16 @@ def playone4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1734,12 +2452,16 @@ def playone4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1775,6 +2497,7 @@ def playone4random ():
                     print (uno.name, 'murió en su turno')
 def playtwo4 ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1826,12 +2549,16 @@ def playtwo4 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1886,12 +2613,16 @@ def playtwo4 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -1927,6 +2658,7 @@ def playtwo4 ():
                     print (dos.name, 'murió en su turno')
 def playtwo4random ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -1964,12 +2696,16 @@ def playtwo4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2010,12 +2746,16 @@ def playtwo4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2051,6 +2791,7 @@ def playtwo4random ():
                     print (dos.name, 'murió en su turno')
 def playthree4 ():
     tres.nturnos += 1
+    tempo3()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -2102,12 +2843,16 @@ def playthree4 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2162,12 +2907,16 @@ def playthree4 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2203,6 +2952,7 @@ def playthree4 ():
                     print (tres.name, 'murió en su turno')
 def playthree4random ():
     tres.nturnos += 1
+    tempo3()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -2240,12 +2990,16 @@ def playthree4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2286,12 +3040,16 @@ def playthree4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2327,6 +3085,7 @@ def playthree4random ():
                     print (tres.name, 'murió en su turno')
 def playfour4 ():
     cuatro.nturnos += 1
+    tempo4()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -2378,12 +3137,16 @@ def playfour4 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2438,12 +3201,16 @@ def playfour4 ():
                 objective = uno
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2479,6 +3246,7 @@ def playfour4 ():
                     print (cuatro.name, 'murió en su turno')
 def playfour4random ():
     cuatro.nturnos += 1
+    tempo4()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -2516,12 +3284,16 @@ def playfour4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2562,12 +3334,16 @@ def playfour4random ():
                 objective = cuatro
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    campo.trrr = 12
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos4 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2604,6 +3380,7 @@ def playfour4random ():
 
 def playone6atraco ():
     uno.nturnos += 1
+    tempo1()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -2637,7 +3414,16 @@ def playone6atraco ():
             print (uno.name, 'se levanta y puede seguir peleando')
             uno.health = uno.maxhealth
             uno.ko = 0
-        elif uno == serpientero or uno == poker and uno.ko > 1:
+            uno.carga_cura = 0
+            uno.carga_hemorragia = 0
+            uno.carga_hielo = 0
+            uno.carga_maldita = 0
+            uno.carga_paralizado = 0
+            uno.carga_quemado = 0
+            uno.carga_sangrado = 0
+            uno.carga_stun = 0
+            uno.carga_veneno = 0
+        if uno == serpientero or uno == poker and uno.ko > 1:
             if uno.carga_stun <= 0 and uno.carga_hielo <= 0:
                 who = input ('¿Quién es tu objetivo, jugador 1?') ######
                 if who.lower() == 'jugador 2': ####
@@ -2679,14 +3465,18 @@ def playone6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2722,7 +3512,7 @@ def playone6atraco ():
                     print( uno.name,'mató a', objective.name)
                     objective.ko = 3
         elif uno.ko > 1:
-            print ('Estás noqueado')
+            print ('Estás noqueado, jugador 1', '\n')
             uno.ko -= 1
         else:
             if uno.carga_stun <= 0 and uno.carga_hielo <= 0:
@@ -2766,14 +3556,18 @@ def playone6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2817,6 +3611,7 @@ def playone6atraco ():
 
 def playtwo6atraco ():
     dos.nturnos += 1
+    tempo2()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -2850,7 +3645,16 @@ def playtwo6atraco ():
             print (uno.name, 'se levanta y puede seguir peleando')
             dos.health = dos.maxhealth
             dos.ko = 0
-        elif dos == serpientero or dos == poker and dos.ko > 1:
+            dos.carga_cura = 0
+            dos.carga_hemorragia = 0
+            dos.carga_hielo = 0
+            dos.carga_paralizado = 0
+            dos.carga_maldita = 0
+            dos.carga_quemado = 0
+            dos.carga_sangrado = 0
+            dos.carga_stun = 0
+            dos.carga_veneno = 0
+        if dos == serpientero or dos == poker and dos.ko > 1:
             if dos.carga_stun <= 0 and dos.carga_hielo <= 0:
                 who = input ('¿Quién es tu objetivo, jugador 2?') ######
                 if who.lower() == 'jugador 2': ####
@@ -2892,14 +3696,18 @@ def playtwo6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -2935,7 +3743,7 @@ def playtwo6atraco ():
                     print( dos.name,'mató a', objective.name)
                     objective.ko = 3
         elif dos.ko > 1:
-            print ('Estás noqueado')
+            print ('Estás noqueado, jugador 2', '\n')
             dos.ko -= 1
         else:
             if dos.carga_stun <= 0 and dos.carga_hielo <= 0:
@@ -2979,14 +3787,18 @@ def playtwo6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3030,6 +3842,7 @@ def playtwo6atraco ():
 
 def playthree6atraco ():
     tres.nturnos += 1
+    tempo3()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -3063,7 +3876,16 @@ def playthree6atraco ():
             print (tres.name, 'se levanta y puede seguir peleando')
             tres.health = tres.maxhealth
             tres.ko = 0
-        elif tres == serpientero or tres == poker and tres.ko > 1:
+            tres.carga_cura = 0
+            tres.carga_hemorragia = 0
+            tres.carga_hielo = 0
+            tres.carga_maldita = 0
+            tres.carga_paralizado = 0
+            tres.carga_quemado = 0
+            tres.carga_sangrado = 0
+            tres.carga_stun = 0
+            tres.carga_veneno = 0
+        if tres == serpientero or tres == poker and tres.ko > 1:
             if tres.carga_stun <= 0 and tres.carga_hielo <= 0:
                 who = input ('¿Quién es tu objetivo, jugador 3?') ######
                 if who.lower() == 'jugador 2': ####
@@ -3105,14 +3927,18 @@ def playthree6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3148,7 +3974,7 @@ def playthree6atraco ():
                     print(tres.name,'noqueó a', objective.name)
                     objective.ko = 3
         elif tres.ko > 0:
-            print ('Estás noqueado')
+            print ('Estás noqueado, jugador 3', '\n')
             tres.ko -= 1
         else:
             if tres.carga_stun <= 0 and tres.carga_hielo <= 0:
@@ -3192,14 +4018,18 @@ def playthree6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3243,6 +4073,7 @@ def playthree6atraco ():
 
 def playfour6atraco ():
     cuatro.nturnos += 1
+    tempo3()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -3276,7 +4107,16 @@ def playfour6atraco ():
             print (cuatro.name, 'se levanta y puede seguir peleando')
             cuatro.health = cuatro.maxhealth
             cuatro.ko = 0
-        elif cuatro == serpientero or cuatro == poker and cuatro.ko > 1:
+            cuatro.carga_cura = 0
+            cuatro.carga_hemorragia = 0
+            cuatro.carga_hielo = 0
+            cuatro.carga_maldita = 0
+            cuatro.carga_paralizado = 0
+            cuatro.carga_quemado = 0
+            cuatro.carga_sangrado = 0
+            cuatro.carga_stun = 0
+            cuatro.carga_veneno = 0
+        if cuatro == serpientero or cuatro == poker and cuatro.ko > 1:
             if cuatro.carga_stun <= 0 and cuatro.carga_hielo <= 0:
                 who = input ('¿Quién es tu objetivo, jugador 4?') ######
                 if who.lower() == 'jugador 2': ####
@@ -3318,14 +4158,18 @@ def playfour6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3361,7 +4205,7 @@ def playfour6atraco ():
                     print( cuatro.name,'noqueó a', objective.name)
                     objective.ko = 3
         elif cuatro.ko > 0:
-            print ('Estás noqueado')
+            print ('Estás noqueado, jugador 4', '\n')
             cuatro.ko -= 1
         else:
             if cuatro.carga_stun <= 0 and cuatro.carga_hielo <= 0:
@@ -3405,14 +4249,18 @@ def playfour6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3456,6 +4304,7 @@ def playfour6atraco ():
 
 def playfive6atraco ():
     cinco.nturnos += 1
+    tempo5()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -3489,7 +4338,15 @@ def playfive6atraco ():
             print (cinco.name, 'se levanta y puede seguir peleando')
             cinco.health = cinco.maxhealth
             cinco.ko = 0
-        elif cinco == serpientero or cinco == poker and cinco.ko > 1:
+            cinco.carga_hemorragia = 0
+            cinco.carga_hielo = 0
+            cinco.carga_maldita = 0
+            cinco.carga_paralizado = 0
+            cinco.carga_quemado = 0
+            cinco.carga_sangrado = 0
+            cinco.carga_stun = 0
+            cinco.carga_veneno = 0
+        if cinco == serpientero or cinco == poker and cinco.ko > 1:
             if cinco.carga_stun <= 0 and cinco.carga_hielo <= 0:
                 who = input ('¿Quién es tu objetivo, jugador 5?') ######
                 if who.lower() == 'jugador 2': ####
@@ -3531,14 +4388,18 @@ def playfive6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3574,7 +4435,7 @@ def playfive6atraco ():
                     print( cinco.name,'mató a', objective.name)
                     objective.ko = 3
         elif cinco.ko > 0:
-            print ('Estás noqueado')
+            print ('Estás noqueado, jugador 5', '\n')
             cinco.ko -= 1
         else:
             if cinco.carga_stun <= 0 and cinco.carga_hielo <= 0:
@@ -3618,14 +4479,18 @@ def playfive6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3669,6 +4534,7 @@ def playfive6atraco ():
 
 def playsix6atraco ():
     seis.nturnos += 1
+    tempo6()
     for turnnn in range (1):
         if campo.lluvia == 1:
             uno.carga_quemado = 0
@@ -3702,7 +4568,16 @@ def playsix6atraco ():
             print (seis.name, 'se levanta y puede seguir peleando')
             seis.health = seis.maxhealth
             seis.ko = 0
-        elif seis == serpientero or seis == poker and seis.ko > 1:
+            seis.carga_cura = 0
+            seis.carga_hemorragia = 0
+            seis.carga_hielo = 0
+            seis.carga_maldita = 0
+            seis.carga_paralizado = 0
+            seis.carga_quemado = 0
+            seis.carga_sangrado = 0
+            seis.carga_stun = 0
+            seis.carga_veneno = 0
+        if seis == serpientero or seis == poker and seis.ko > 1:
             if seis.carga_stun <= 0 and seis.carga_hielo <= 0:
                 who = input ('¿Quién es tu objetivo, jugador 6?') ######
                 if who.lower() == 'jugador 2': ####
@@ -3744,14 +4619,18 @@ def playsix6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3785,9 +4664,9 @@ def playsix6atraco ():
                 seis.turno(objective)
                 if objective.health <= 0:
                     print( seis.name,'noqueó a', objective.name)
-                    objective.ko = 3
+                    objective.ko = 4
         elif seis.ko > 1:
-            print ('Estás noqueado')
+            print ('Estás noqueado, jugador 6', '\n')
             seis.ko -= 1
         else:
             if seis.carga_stun <= 0 and seis.carga_hielo <= 0:
@@ -3831,14 +4710,18 @@ def playsix6atraco ():
                 objective = dos
             fenomeno = randint (1, 487) #487
             if fenomeno <= 28 :
-                terremoto = randint (1, 4)
-                print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
-                uno.carga_stun += terremoto
-                dos.carga_stun += terremoto
-                tres.carga_stun += terremoto
-                cuatro.carga_stun += terremoto
-                cinco.carga_stun += terremoto
-                seis.carga_stun += terremoto
+                if campo.trrr == 0:
+                    terremoto = randint (1, 4)
+                    print ('Un terremoto sacude la tierra y aturde a todos', terremoto, 'turnos')
+                    uno.carga_stun += terremoto
+                    dos.carga_stun += terremoto
+                    tres.carga_stun += terremoto
+                    cuatro.carga_stun += terremoto
+                    cinco.carga_stun += terremoto
+                    seis.carga_stun += terremoto
+                    campo.trrr = 18
+                else:
+                    campo.trrr -= 1
             elif fenomeno > 128 and fenomeno <= 142:
                 refuerzos6 ()
             elif fenomeno > 242 and fenomeno <= 257:
@@ -3880,8 +4763,19 @@ def playsix6atraco ():
                     print (seis.name, 'murió en su turno')
                     seis.ko = 3
 
+class Player ():
+    def __init__(self, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus):
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+jugador = Player (0, 0, 0, 0, 0, 0, '')
+
 class Warrior ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -3907,6 +4801,50 @@ class Warrior ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Guerrero')
         print('Nivel de salud:', self.health)
@@ -3916,7 +4854,7 @@ class Warrior ():
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "tajo", inflige 10 de daño, cuesta 2 de energía, tiene un', self.preci1,'% precisión y un 70% de probabilidades de infligir un sangrado en su enemigo')
         print ('Ataque 2: "estocada", inflige 101 de daño, cuesta 45 de energía y tiene un', self.preci2,'% precisión')
-        print ('Ataque super: "Caballero", aplica un escudo a tu objetivo (puedes autotirartelo) que aumenta tu vida en 120 y tu defensa en 0.2 (no afecta el poder), cuesta 60 de energía y tiene un', self.preci3,'% precisión')
+        print ('Ataque super: "Caballero", aplica un escudo a tu objetivo (puedes autotirartelo) que aumenta tu vida en 120 y tu defensa en 0.2 (no afecta el poder), cuesta 60 de energía, tiene un', self.preci3,'% precisión y 2 turnos de cooldown')
         print ('Vendas: "venda", cura 80 de vida (afecta la mitad del poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene un', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía y tiene un', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "juicio final", al principio de cada turno aumenta su poder en 0.05')
@@ -3943,36 +4881,7 @@ class Warrior ():
                     print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     break
                 if self.carga_stun > 0:
-                    #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -3984,39 +4893,13 @@ class Warrior ():
                     self.power += 0.05
                     if turn.lower() == 'tajo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                            self.health -= 32 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            self.carga_stun -= 1
-                            print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -4027,6 +4910,13 @@ class Warrior ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 2:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoo = randint (0,100)
                         if unoo > self.preci1: 
                             print (self.name, 'falla el golpe!')
@@ -4035,53 +4925,68 @@ class Warrior ():
                                 self.health -= 800
                             self.energy += 2
                         else:
-                            sng = randint (0, 100)
-                            print ('Un potenete tajo le hace una brecha en la piel del enemigo que inflige', 10 * self.power / enemy.defense, 'de daño a', enemy.name)
-                            if sng <= 70:
-                                print (self.name, 'inflige un sangrado en', enemy.name)
-                                enemy.carga_sangrado += 1
-                            enemy.health -= 10 * self.power / enemy.defense
-                            self.energy -= 2
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 2
+                            if self.locura == 0:
+                                sng = randint (0, 100)
+                                dano = 10 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Un potenete tajo le hace una brecha en la piel del enemigo que inflige', dano_total, 'de daño a', enemy.name)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                if sng <= 70:
+                                    print (self.name, 'inflige un sangrado en', enemy.name)
+                                    enemy.carga_sangrado += 1
+                                self.energy -= 2
+                                if self.energy < 0:
+                                    self.health -= 800
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    sng = randint (0, 100)
+                                    print ('A causa de su locura ', self.name,' se hace un tajo en el brazo que le hece', 10 * self.power / self.defense, 'de daño')
+                                    if sng <= 70:
+                                        print (self.name, 'se auto-inflige un sangrado en', enemy.name)
+                                        enemy.carga_sangrado += 1
+                                    self.energy -= 2
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 2
+                                else:
+                                    sng = randint (0, 100)
+                                    dano = 10 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Un potenete tajo le hace una brecha en la piel del enemigo que inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    if sng <= 70:
+                                        print (self.name, 'inflige un sangrado en', enemy.name)
+                                        enemy.carga_sangrado += 1
+                                    enemy.health -= 10 * self.power / enemy.defense
+                                    self.energy -= 2
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 2
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'estocada':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este ataque')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -4092,6 +4997,13 @@ class Warrior ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 45:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doos = randint(0, 100)
                         if doos > self.preci2: 
                             print (self.name, 'falla el golpe!')
@@ -4100,50 +5012,53 @@ class Warrior ():
                                 self.health -= 800
                             self.energy += 2
                         else:
-                            print ('Una increíble estocada atraviesa al enemigo y le inflige', 101 * self.power / enemy.defense, 'de daño a', enemy.name)
-                            enemy.health -= 101 * self.power / enemy.defense
-                            self.energy -= 45
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 2
+                            if self.locura == 0:
+                                dano = 101 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Una increíble estocada atraviesa al enemigo y le inflige', dano_total, 'de daño a', enemy.name)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                self.energy -= 45
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('Una terrible locura invade a ', self.name,'lo que lo lleva a atravezarse con su propia espada infligiendose', 101 * self.power / self.defense, 'de daño')
+                                    self.health -= 101 * self.power / self.defense
+                                    self.energy -= 45
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 2
+                                else:
+                                    dano = 101 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una increíble estocada atraviesa al enemigo y le inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.energy -= 45
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 2
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'caballero':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está stuneado y no llega a coger el escudo')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -4153,6 +5068,13 @@ class Warrior ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 60:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         trees = randint(0, 100)
                         if trees > self.preci3: 
                             print ('¡El escudo se estropea!')
@@ -4168,44 +5090,19 @@ class Warrior ():
                             if self.energy < 0:
                                 self.health -= 800
                             self.energy += 2
+                        self.cooldown3 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -4215,6 +5112,10 @@ class Warrior ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
                         curaa = randint(0, 100)
                         if curaa > self.precicura: 
                             print ('¡Falla la venda!')
@@ -4223,9 +5124,9 @@ class Warrior ():
                                 self.health -= 800
                             self.energy += 2
                         else:
-                            if self.health >= 2500 - 80 * (self.power/2) and self.health < 2500:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 2500
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
@@ -4234,7 +5135,7 @@ class Warrior ():
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 2
-                            elif self.health > 2500:
+                            elif self.health > self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
@@ -4259,40 +5160,14 @@ class Warrior ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -4316,21 +5191,32 @@ class Warrior ():
                             self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad caballero se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado, 'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-guerrero = Warrior ('Kenric', 2500, 2500, 120, 0.95, 1.2, 42, 100, 95, 95, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0)
-
+guerrero = Warrior ('Kenric', 2500, 2500, 120, 0.95, 1.2, 42, 100, 95, 95, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Magician ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -4356,6 +5242,50 @@ class Magician ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Mago')
         print('Nivel de salud:', self.health)
@@ -4365,7 +5295,7 @@ class Magician ():
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "orbe", inflige 72 de daño, cuesta 4 de energía, tiene', self.preci1,'% precisión y un 25% de probabilidades de congelar al enemigo 1 turno')
         print ('Ataque 2: "Fuerza", aumenta tu poder en 0.2 (no afecta el poder) y aumenta tu precición de super en 1%, cuesta 60 de energía y tiene', self.preci2,'% precisión')
-        print ('Ataque super: "Tornado fuego", inflige 520 de daño, cuesta 260 de energía, tiene', self.preci3,'% precisión y aplica dos quemaduras en tu enemigo')
+        print ('Ataque super: "Tornado fuego", inflige 520 de daño, cuesta 150 de energía, tiene', self.preci3,'% precisión, 4 turnos de cooldown y aplica dos quemaduras en tu enemigo')
         print ('Poción curativa: "cura", cura 80 de vida (afecta la mitad del poder), cura 1 hemorragia y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 80 de energía y tiene', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "frenesí", tiene un 30% de probabilidades de lanzar un segundo ataque 1')
@@ -4393,35 +5323,7 @@ class Magician ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -4432,40 +5334,10 @@ class Magician ():
                     turn = input('Turno del mago:')
                     if turn.lower() == 'orbe':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -4475,6 +5347,13 @@ class Magician ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 4:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unooo = randint(0, 100)
                         if unooo > self.preci1: 
                             print ('¡', self.name, 'falla el golpe!')
@@ -4483,65 +5362,100 @@ class Magician ():
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            print ('Un orbe impacta en el enemigo, inflige', 72 * self.power / enemy.defense, 'de daño a', enemy.name)
-                            orbeee = randint (1,100)
-                            if orbeee <= 25:
-                                print (self.name, 'congela a', enemy.name, '1 turno')
-                                enemy.carga_hielo += 1
-                            enemy.health -= 72 * self.power / enemy.defense
-                            self.energy -= 4
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 4
-                            seconddd = randint (1,100)
-                            if seconddd <= 30:
-                                print ('Un segundo orbe impacta en el enemigo, inflige', 72 * self.power / enemy.defense, 'de daño a', enemy.name)
+                            if self.locura == 0:
+                                dano = 72 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Un orbe impacta en el enemigo, inflige', dano_total, 'de daño a', enemy.name)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
                                 orbeee = randint (1,100)
                                 if orbeee <= 25:
                                     print (self.name, 'congela a', enemy.name, '1 turno')
                                     enemy.carga_hielo += 1
-                                enemy.health -= 72 * self.power / enemy.defense
                                 self.energy -= 4
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 4
+                                seconddd = randint (1,100)
+                                if seconddd <= 30:
+                                    dano = 72 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Un segundo orbe impacta en el enemigo, inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    orbeee = randint (1,100)
+                                    if orbeee <= 25:
+                                        print (self.name, 'congela a', enemy.name, '1 turno')
+                                        enemy.carga_hielo += 1
+                                    self.energy -= 4
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('Debido a tu locura te lanzas un orbe que te inflige', 72 * self.power / self.defense, 'de daño')
+                                    orbeee = randint (1,100)
+                                    if orbeee <= 25:
+                                        print (self.name, 'se auto-congela 1 turno')
+                                        self.carga_hielo += 1
+                                    self.health -= 72 * self.power / self.defense
+                                    self.energy -= 4
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                                    seconddd = randint (1,100)
+                                    if seconddd <= 30:
+                                        print ('Un segundo orbe impacta sobre ti, te inflige', 72 * self.power / self.defense, 'de daño')
+                                        orbeee = randint (1,100)
+                                        if orbeee <= 25:
+                                            print (self.name, ' se auto-congela 1 turno')
+                                            self.carga_hielo += 1
+                                        self.health -= 72 * self.power / self.defense
+                                        self.energy -= 4
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                else:
+                                    print ('Un orbe impacta en el enemigo, inflige', 72 * self.power / enemy.defense, 'de daño a', enemy.name)
+                                    orbeee = randint (1,100)
+                                    if orbeee <= 25:
+                                        print (self.name, 'congela a', enemy.name, '1 turno')
+                                        enemy.carga_hielo += 1
+                                    enemy.health -= 72 * self.power / enemy.defense
+                                    self.energy -= 4
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                                    seconddd = randint (1,100)
+                                    if seconddd <= 30:
+                                        print ('Un segundo orbe impacta en el enemigo, inflige', 72 * self.power / enemy.defense, 'de daño a', enemy.name)
+                                        orbeee = randint (1,100)
+                                        if orbeee <= 25:
+                                            print (self.name, 'congela a', enemy.name, '1 turno')
+                                            enemy.carga_hielo += 1
+                                        enemy.health -= 72 * self.power / enemy.defense
+                                        self.energy -= 4
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'fuerza':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0: 
+                            print (self.name, 'está silenciado y no puede tomarse la poción')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -4552,58 +5466,33 @@ class Magician ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        dooos = randint(0, 100)
+                        if self.energy <= 60:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
+                        dooos = randint(1, 100)
                         if dooos > self.preci2: 
                             print ('¡Se rompe la poción!')
                             self.energy -= 30
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         else:
                             print (self.name, 'toma un poción que aumenta su poder en 0.2 y la precisión del super en', 1 * self.power)
                             self.preci3 += 1 * self.power
                             self.power += 0.2
                             self.energy -= 60
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'tornado fuego':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -4614,58 +5503,67 @@ class Magician ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 150:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treees = randint(0, 100)
                         if treees > self.preci3: 
                             print ('¡', self.name, 'falla el golpe!')
-                            self.energy -= 130
+                            self.energy -= 75
                             if self.energy < 0:
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            print (self.name, 'usa todas sus fuerzas e invoca un tornado ígneo infligiendo', 520 * self.power / enemy.defense, 'de daño a', enemy.name)
-                            enemy.health -= 520 * self.power / enemy.defense
-                            enemy.carga_quemado += 2
-                            self.energy -= 260
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 4
+                            if self.locura == 0:
+                                dano = 520 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (self.name, 'usa todas sus fuerzas e invoca un tornado ígneo infligiendo', dano_total, 'de daño a', enemy.name, 'y creandole 2 quemaduras')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_quemado += 2
+                                self.energy -= 150
+                                if self.energy < 0:
+                                    self.health -= 800
+                                self.energy += 4
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, 'usa todas sus fuerzas e invoca un tornado ígneo sobre si mismo debido a su locura infligiendose', 520 * self.power / self.defense, 'de daño y creandose 2 quemaduras')
+                                    self.health -= 520 * self.power / self.defense
+                                    self.carga_quemado += 2
+                                    self.energy -= 150
+                                    self.energy += 4
+                                else:
+                                    dano = 520 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'usa todas sus fuerzas e invoca un tornado ígneo infligiendo', dano_total, 'de daño a', enemy.name, 'y creandole 2 quemaduras')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_quemado += 2
+                                    self.energy -= 150
+                                    self.energy += 4
+                            else:
+                                print ('ERROR')
+                        self.cooldown3 = self.nturnos + 5
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'cura':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -4676,6 +5574,10 @@ class Magician ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
                         curaaa = randint(0, 100)
                         if curaaa > self.precicura: 
                             print ('Se rompe la poción!')
@@ -4684,9 +5586,9 @@ class Magician ():
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            if self.health >= 1580 - 80 * (self.power/2) and self.health < 1580:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te tomas una poción que te cura toda la vida')
-                                self.health = 1580
+                                self.health = self.maxhealth
                                 if self.carga_hemorragia > 0:
                                     self.carga_hemorragia -= 1
                                 if self.carga_quemado > 0:
@@ -4694,8 +5596,8 @@ class Magician ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
-                            elif self.health > 1580:
+                                self.energy += 4
+                            elif self.health > self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_hemorragia > 0:
                                     self.carga_hemorragia -= 1
@@ -4704,7 +5606,7 @@ class Magician ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 4
                             else:
                                 print ('Te tomas una poción que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -4715,45 +5617,17 @@ class Magician ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
+                            break 
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -4777,20 +5651,32 @@ class Magician ():
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad tornado fuego se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('(Las inmovilizaciones no te afectan)')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-mago = Magician('Gandalf', 1580, 1580, 170, 1, 1, 30, 100, 80, 75, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0)
+mago = Magician('Gandalf', 1580, 1580, 170, 1, 1, 30, 100, 80, 75, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Hereje ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -4816,6 +5702,50 @@ class Hereje ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Ágil')
         print('Nivel de salud:', self.health)
@@ -4824,8 +5754,8 @@ class Hereje ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "flecha", inflige 10 de daño, cuesta 3 de energía, tiene', self.preci1,'% precisión y tiene 20% de probabilidades de infligir una hemorragia en tu enemigo')
-        print ('Ataque 2: "flecha vampiro", inflige 40 de daño, te cura 25 de vida (aumentado por la mitad del poder), cuesta 45 de energía y', self.preci2,'% precisión')
-        print ('Ataque super: "Ira", aumenta tu poder en 1 (no afecta el poder), cuesta 70 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque 2: "flecha vampiro", inflige 40 de daño, te cura 25 de vida (aumentado por la mitad del poder), cuesta 40 de energía,', self.preci2,'% precisión y 1 turno de cooldown')
+        print ('Ataque super: "Ira", aumenta tu poder en 1 (no afecta el poder), cuesta 70 de energía, tiene', self.preci3,'% precisión y 1 turno de cooldown')
         print ('Vendas: "venda", cura 80 de vida (no afecta el poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía (afecta la mitad del poder) y', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "frenesí", tiene un 30% de probabilidades de lanzar un segundo ataque 1')
@@ -4853,35 +5783,7 @@ class Hereje ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -4892,40 +5794,10 @@ class Hereje ():
                     turn = input('Turno del arquero:')
                     if turn.lower() == 'flecha':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -4935,6 +5807,13 @@ class Hereje ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 3:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoooo = randint(0, 100)
                         if unoooo > self.preci1: 
                             print (self.name, 'falla el golpe!')
@@ -4943,61 +5822,96 @@ class Hereje ():
                                 self.health -= 800
                             self.energy += 3
                         else:
-                            print ('Una flecha se clava en tu enemigo, le inflige', 10 * self.power / enemy.defense ,'de daño a', enemy.name)
-                            enemy.health -= 10 * self.power / enemy.defense
-                            flechaaa = randint (1, 100)
-                            if flechaaa <= 20:
-                                enemy.carga_hemorragia += 1
-                                print ('Tras un fuerte flechazo una peligrosa hemorragia surge en', enemy.name)
-                            self.energy -= 3
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 3
-                            secondd = randint (1,100)
-                            if secondd <= 30:
-                                print ('Una segunda flecha se clava en tu enemigo, le inflige', 10 * self.power / enemy.defense ,'de daño a', enemy.name)
-                                enemy.health -= 10 * self.power / enemy.defense
-                                flechaaaa = randint (1, 100)
-                                if flechaaaa <= 20:
+                            if self.locura == 0:
+                                dano = 10 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Una flecha se clava en tu enemigo, le inflige', dano_total ,'de daño a', enemy.name)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                flechaaa = randint (1, 100)
+                                if flechaaa <= 20:
                                     enemy.carga_hemorragia += 1
                                     print ('Tras un fuerte flechazo una peligrosa hemorragia surge en', enemy.name)
+                                self.energy -= 3
+                                if self.energy < 0:
+                                    self.health -= 800
+                                self.energy += 3
+                                secondd = randint (1,100)
+                                if secondd <= 30:
+                                    dano = 10 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una segunda flecha se clava en tu enemigo, le inflige', dano_total ,'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    flechaaaa = randint (1, 100)
+                                    if flechaaaa <= 20:
+                                        enemy.carga_hemorragia += 1
+                                        print ('Tras un fuerte flechazo una peligrosa hemorragia surge en', enemy.name)
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('A causa de la locura', self.name,'se clava una flecha en el pie, se inflige', 10 * self.power / self.defense ,'de daño')
+                                    self.health -= 10 * self.power / self.defense
+                                    flechaaa = randint (1, 100)
+                                    if flechaaa <= 20:
+                                        self.carga_hemorragia += 1
+                                        print ('Tras el fuerte flechazo una peligrosa hemorragia surge en', self.name)
+                                    self.energy -= 3
+                                    self.energy += 3
+                                    secondd = randint (1,100)
+                                    if secondd <= 30:
+                                        print ('Una segunda flecha se clava en ti infligiendote', 10 * self.power / self.defense ,'de daño')
+                                        self.health -= 10 * self.power / self.defense
+                                        flechaaaa = randint (1, 100)
+                                        if flechaaaa <= 20:
+                                            self.carga_hemorragia += 1
+                                            print ('Tras el fuerte flechazo una peligrosa hemorragia surge en', self.name)
+                                else:
+                                    dano = 10 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una flecha se clava en tu enemigo, le inflige', dano_total ,'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    flechaaa = randint (1, 100)
+                                    if flechaaa <= 20:
+                                        enemy.carga_hemorragia += 1
+                                        print ('Tras un fuerte flechazo una peligrosa hemorragia surge en', enemy.name)
+                                    self.energy -= 3
+                                    self.energy += 3
+                                    secondd = randint (1,100)
+                                    if secondd <= 30:
+                                        dano = 10 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una segunda flecha se clava en tu enemigo, le inflige', dano_total ,'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        flechaaaa = randint (1, 100)
+                                        if flechaaaa <= 20:
+                                            enemy.carga_hemorragia += 1
+                                            print ('Tras un fuerte flechazo una peligrosa hemorragia surge en', enemy.name)
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'flecha vampiro':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este ataque')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5008,58 +5922,63 @@ class Hereje ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 40:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doooos = randint(0, 100)
                         if doooos > self.preci2: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 22.5
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 20
                             self.energy += 3
                         else:
-                            print ('Una flecha se clava en tu enemigo, le inflige', 40 * self.power / enemy.defense, 'de daño a', enemy.name, '¡Y te cura', 25 * (self.power / 2) ,'de vida!')
-                            enemy.health -= 40 * self.power / enemy.defense
-                            self.health += 25 * (self.power / 2)
-                            self.energy -= 45
-                            if self.energy < 0:
-                                self.health -= 800
-                        self.energy += 3
+                            if self.locura == 0:
+                                dano = 40 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Una flecha se clava en tu enemigo, le inflige', dano_total, 'de daño a', enemy.name, '¡Y te cura', 25 * (self.power / 2) * self.lcura * self.rcura,'de vida!')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                self.health += 25 * (self.power / 2) * self.lcura * self.rcura
+                                self.energy -= 40
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('A causa de la locura', self.name,'se dispara una flecha en su torso, le inflige', 40 * self.power / self.defense, 'de daño ¡Y te cura', 25 * (self.power / 2) * self.lcura * self.rcura,'de vida!')
+                                    self.health -= 40 * self.power / self.defense
+                                    self.health += 25 * (self.power / 2) * self.lcura * self.rcura
+                                    self.energy -= 40
+                                    self.energy += 3
+                                else:
+                                    dano = 40 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una flecha se clava en tu enemigo, le inflige', dano_total, 'de daño a', enemy.name, '¡Y te cura', 25 * (self.power / 2) * self.lcura * self.rcura,'de vida!')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.health += 25 * (self.power / 2) * self.lcura * self.rcura
+                                    self.energy -= 40
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+                        self.cooldown2 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'ira':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar enfurecerse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5070,6 +5989,13 @@ class Hereje ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeees = randint(0, 100)
                         if treeees > self.preci3: 
                             print (self.name, 'falla el golpe!')
@@ -5081,46 +6007,17 @@ class Hereje ():
                             print (self.name, 'se enfurece y aumenta su poder en uno, ¡', enemy.name, 'apurate en matarlo!!')
                             self.power += 1
                             self.energy -= 70
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
+                        self.cooldown3 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5131,17 +6028,21 @@ class Hereje ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
                         curaaaaa = randint(0, 100)
                         if curaaaaa > self.precicura: 
                             print ('¡falla la venda!')
                             self.energy -= 35
                             if self.energy < 0:
                                 self.health -= 800
-                            self.energy += 4
+                            self.energy += 3
                         else:
-                            if self.health >= 1700 - 80 * (self.power/2) and self.health < 1700:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 1700
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
@@ -5149,8 +6050,8 @@ class Hereje ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
-                            elif self.health >= 1700:
+                                self.energy += 3
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
@@ -5159,7 +6060,7 @@ class Hereje ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -5170,44 +6071,16 @@ class Hereje ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5232,20 +6105,32 @@ class Hereje ():
                             self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad ira se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('(Las inmovilizaciones no te afectan)')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-arquero = Hereje('Alaric', 1700, 1700, 145, 0.5, 1, 59, 100, 80, 75, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0)
+arquero = Hereje('Alaric', 1700, 1700, 145, 0.5, 1, 59, 100, 80, 75, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Maldi ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -5271,6 +6156,50 @@ class Maldi ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Mago')
         print('Nivel de salud:', self.health)
@@ -5278,9 +6207,9 @@ class Maldi ():
         print ('Poder:', self.power)
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
-        print ('Ataque 1: "mal", inflige 22 de daño y aplica una carga maldita al enemigo (máximo 4) y si tiene quitas una cargas de cura a tu objetivo, cuesta 10 de energía, tiene', self.preci1,'% precisión y quita una carga de cura a tu enemigo')
-        print ('Ataque 2: "oscuridad", aumenta tu poder en 0,05 | 0,1 | 0,3 | 0,6 | 1 y si tiene quitas dos cargas de cura a tu objetivo, cuesta 55 de energía tiene', self.preci2,'% precisión y quita dos cargas de cura a tu enemigo')
-        print ('Ataque super: "Diablo", inflige 100 | 150 | 250 | 500 | 800 de daño, cuesta 150 de energía, todas las cargas, tiene', self.preci3,'% precisión y quita todas las cargas de cura de tu enemigo')
+        print ('Ataque 1: "mal", inflige 22 de daño y aplica una maldición al objetivo (máximo 4) y si tiene quitas una cargas de cura a tu objetivo, cuesta 10 de energía y tiene', self.preci1,'% precisión')
+        print ('Ataque 2: "oscuridad", aumenta tu poder en 0,05 | 0,1 | 0,3 | 0,6 | 1, te da más poder dependiento de las maldiciones que tengas TÜ, quita todas las maldiciones que tengas tú, cuesta 55 de energía, tiene', self.preci2,'% precisión y 2 turnos de cooldown')
+        print ('Ataque super: "Diablo", inflige 100 | 150 | 250 | 500 | 800 de daño, hace más o menos daño dependiendo de la cantidad de maldiciones que tenga el enemigo, cuesta 80 de energía, quita todas las cargas malditas del enemigo, tiene', self.preci3,'% precisión, 3 turnos de cooldown y quita todas las cargas de cura de tu enemigo')
         print ('Poción curativa: "cura", cura 80 de vida (afecta la mitad del poder), cura 1 hemorragia y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 80 de energía y tiene', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "maestro de pociones" al lanzar un ataque 1 tiene un 50% de posibilidades de envenenar a su objetivo')
@@ -5308,35 +6237,7 @@ class Maldi ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -5347,40 +6248,10 @@ class Maldi ():
                     turn = input('Turno del mago maldito:')
                     if turn.lower() == 'mal':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -5390,69 +6261,95 @@ class Maldi ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 10:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unooooo = randint(0, 100)
                         if unooooo > self.preci1: 
                             print (self.name, 'falla el golpe!')
                             self.energy -= 5
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         else:
-                            print ('una ola de mal inflige', 22 * self.power / enemy.defense, 'de daño a', enemy.name)
-                            enemy.health -= 22 * self.power / enemy.defense
-                            enemy.carga_maldita += 1
-                            if enemy.carga_cura > 0:
-                                enemy.carga_cura -= 1
-                            if enemy.carga_maldita >= 5:
-                                enemy.carga_maldita = 4
-                            venenoo = randint (1, 100)
-                            if venenoo <= 50:
-                                print ('Además', self.name, 'lanza una pocion venenosa a', enemy.name, 'y lo envenena')
-                                enemy.carga_veneno += 1
-                            if venenoo == 100:
-                                print ('Además', self.name, 'lanza una pocion venenosa concentrada a', enemy.name, 'y lo envenena (dos carga de veneno)')
-                                enemy.carga_veneno += 2
-                            self.energy -= 10
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 4
+                            if self.locura == 0:
+                                dano = 22 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('una ola de mal inflige', dano_total, 'de daño a', enemy.name)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_maldita += 1
+                                if enemy.carga_cura > 0:
+                                    enemy.carga_cura -= 1
+                                if enemy.carga_maldita >= 5:
+                                    enemy.carga_maldita = 4
+                                venenoo = randint (1, 100)
+                                if venenoo <= 50:
+                                    print ('Además', self.name, 'lanza una pocion venenosa a', enemy.name, 'y lo envenena')
+                                    enemy.carga_veneno += 1
+                                if venenoo == 100:
+                                    print ('Además', self.name, 'lanza una pocion venenosa concentrada a', enemy.name, 'y lo envenena (dos carga de veneno)')
+                                    enemy.carga_veneno += 2
+                                self.energy -= 10
+                                self.energy += 4
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('Una ola de mal inflige', 22 * self.power / self.defense, 'de daño a', self.name, 'debido a su locura')
+                                    self.health -= 22 * self.power / self.defense
+                                    self.carga_maldita += 1
+                                    if self.carga_cura > 0:
+                                        self.carga_cura -= 1
+                                    if self.carga_maldita >= 5:
+                                        self.carga_maldita = 4
+                                    venenoo = randint (1, 100)
+                                    if venenoo <= 50:
+                                        print ('Además', self.name, 'se toma una pocion venenosa debido a su locura y se envenena')
+                                        self.carga_veneno += 1
+                                    if venenoo == 100:
+                                        print ('Además', self.name, 'se toma una pocion venenosa concentrada debido a su locura y se envenena (dos carga de veneno)')
+                                        self.carga_veneno += 2
+                                    self.energy -= 10
+                                    self.energy += 4
+                                else:
+                                    dano = 22 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('una ola de mal inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_maldita += 1
+                                    if enemy.carga_cura > 0:
+                                        enemy.carga_cura -= 1
+                                    if enemy.carga_maldita >= 5:
+                                        enemy.carga_maldita = 4
+                                    venenoo = randint (1, 100)
+                                    if venenoo <= 50:
+                                        print ('Además', self.name, 'lanza una pocion venenosa a', enemy.name, 'y lo envenena')
+                                        enemy.carga_veneno += 1
+                                    if venenoo == 100:
+                                        print ('Además', self.name, 'lanza una pocion venenosa concentrada a', enemy.name, 'y lo envenena (dos carga de veneno)')
+                                        enemy.carga_veneno += 2
+                                    self.energy -= 10
+                                    self.energy += 4
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'oscuridad':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5463,70 +6360,49 @@ class Maldi ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 30:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         dooooos = randint(0, 100)
                         if dooooos > self.preci2: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 27.5
+                            self.energy -= 15
                             if self.energy < 0:
                                 self.health -= 800
                             self.energy += 4
                         else:
                             print ('Te adentras en la oscuridad y aumentas tu poder')
-                            if enemy.carga_maldita <= 0:
+                            if self.carga_maldita <= 0:
                                 self.power += 0.05
-                            elif enemy.carga_maldita == 1:
+                                self.carga_maldita = 0
+                            elif self.carga_maldita == 1:
                                 self.power += 0.1
-                            elif enemy.carga_maldita == 2:
+                                self.carga_maldita = 0
+                            elif self.carga_maldita == 2:
                                 self.power += 0.3
-                            elif enemy.carga_maldita == 3:
+                                self.carga_maldita = 0
+                            elif self.carga_maldita == 3:
                                 self.power += 0.6
-                            elif enemy.carga_maldita >= 4:
+                                self.carga_maldita = 0
+                            elif self.carga_maldita >= 4:
                                 self.power += 1
-                            if enemy.carga_cura > 0:
-                                enemy.carga_cura -= 2
-                                if enemy.carga_cura < 0:
-                                    enemy.carga_cura = 0
-                            self.energy -= 55
-                            if self.energy < 0:
-                                self.health -= 800
+                                self.carga_maldita = 0
+                            self.energy -= 30
                             self.energy += 4
+                        self.cooldown2 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'diablo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5537,72 +6413,177 @@ class Maldi ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 80:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeeees = randint(0, 100)
                         if treeeees > self.preci3:
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 75
+                            self.energy -= 40
                             if self.energy < 0:
                                 self.health -= 800
                             self.energy += 4
                             enemy.carga_maldita == 0
                         else:
-                            print (self.name, 'invoca el diablo y le inflige daño a', enemy.name)
-                            if enemy.carga_maldita == 0:
-                                enemy.health -= 100 * self.power / enemy.defense
-                            elif enemy.carga_maldita == 1:
-                                enemy.health -= 150 * self.power / enemy.defense
-                                enemy.carga_maldita -= 1
-                            elif enemy.carga_maldita == 2:
-                                enemy.health -= 250 * self.power / enemy.defense
-                                enemy.carga_maldita -= 2
-                            elif enemy.carga_maldita == 3:
-                                enemy.health -= 500 * self.power / enemy.defense
-                                enemy.carga_maldita -= 3
-                            elif enemy.carga_maldita >= 4:
-                                enemy.health -= 800 * self.power / enemy.defense
-                                enemy.carga_maldita -= enemy.carga_maldita
-                            enemy.carga_cura -= enemy.carga_cura
-                            self.energy -= 150
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 4
+                            if self.locura == 0:
+                                print (self.name, 'invoca el diablo')
+                                if enemy.carga_maldita == 0:
+                                    dano = 100 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+
+                                elif enemy.carga_maldita == 1:
+                                    dano = 150 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_maldita -= 1
+
+                                elif enemy.carga_maldita == 2:
+                                    dano = 250 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_maldita -= 2
+
+                                elif enemy.carga_maldita == 3:
+                                    dano = 500 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_maldita -= 3
+
+                                elif enemy.carga_maldita >= 4:
+                                    dano = 800 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_maldita = 0
+                                enemy.carga_cura = 0
+                                self.energy -= 80
+                                if self.energy < 0:
+                                    self.health -= 800
+                                self.energy += 4
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, 'invoca el diablo pero este se vuelve contra él y le inflige daño')
+                                    if self.carga_maldita == 0:
+                                        self.health -= 100 * self.power / self.defense
+                                    elif self.carga_maldita == 1:
+                                        self.health -= 150 * self.power / self.defense
+                                        self.carga_maldita = 0
+                                    elif self.carga_maldita == 2:
+                                        self.health -= 250 * self.power / self.defense
+                                        self.carga_maldita = 0
+                                    elif self.carga_maldita == 3:
+                                        self.health -= 500 * self.power / self.defense
+                                        self.carga_maldita = 0
+                                    elif self.carga_maldita >= 4:
+                                        self.health -= 800 * self.power / self.defense
+                                        self.carga_maldita = 0
+                                    self.carga_cura = 0
+                                    self.energy -= 80
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                                else:
+                                    print (self.name, 'invoca el diablo')
+                                    if enemy.carga_maldita == 0:
+                                        dano = 100 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+
+                                    elif enemy.carga_maldita == 1:
+                                        dano = 150 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        enemy.carga_maldita -= 1
+
+                                    elif enemy.carga_maldita == 2:
+                                        dano = 250 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        enemy.carga_maldita -= 2
+
+                                    elif enemy.carga_maldita == 3:
+                                        dano = 500 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        enemy.carga_maldita -= 3
+
+                                    elif enemy.carga_maldita >= 4:
+                                        dano = 800 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('El diablo inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        enemy.carga_maldita = 0
+                                    enemy.carga_cura = 0
+                                    self.energy -= 80
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                            else:
+                                print ('ERROR')
+                        self.cooldown3 = self.nturnos + 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'cura':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5613,6 +6594,10 @@ class Maldi ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
                         curaaaaa = randint(0, 100)
                         if curaaaaa > self.precicura: 
                             print ('¡falla la poción!')
@@ -5621,9 +6606,9 @@ class Maldi ():
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            if self.health >= 1530 - 80 * (self.power/2) and self.health < 1530:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te tomas una poción que te cura toda la vida')
-                                self.health = 1530
+                                self.health = self.maxhealth
                                 if self.carga_hemorragia > 0:
                                     self.carga_hemorragia -= 1
                                 if self.carga_quemado > 0:
@@ -5631,8 +6616,8 @@ class Maldi ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
-                            elif self.health >= 1530:
+                                self.energy += 4
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_hemorragia > 0:
                                     self.carga_hemorragia -= 1
@@ -5641,7 +6626,7 @@ class Maldi ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 4
                             else:
                                 print ('Te tomas una poción que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -5652,44 +6637,16 @@ class Maldi ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5714,20 +6671,32 @@ class Maldi ():
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad diablo se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('(Las inmovilizaciones no te afectan)')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-maldito = Maldi ('Drago', 1400, 1530, 180, 1, 1, 16, 89, 79, 99, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0)
+maldito = Maldi ('Drago', 1400, 1530, 180, 1, 1, 16, 89, 79, 99, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Thief ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, nturnos, tipo, mundo, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, nturnos, tipo, mundo, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -5753,6 +6722,50 @@ class Thief ():
         self.tipo = tipo
         self.mundo = mundo
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Ágil')
         print('Nivel de salud:', self.health)
@@ -5761,8 +6774,8 @@ class Thief ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "daga", golpea un nuemero aleatorio de veces del 0 al 5, 1º golpe hace 45 de daño, 2º golpe roba 5 de vida, 3º golpe aumenta tu poder en 0.1, 4º golpe infliges una carga venenosa, 5º golpe haces 80 de daño extra, cuesta 10 de energía y tiene', self.preci1,'% precisión')
-        print ('Ataque 2: "fatiga", disminuye el poder del enemigo en 0.05 (no afecta el poder), su precisión en 1% (no afecta el poder), le quita 2 cargas de cura (no afecta el poder) y le reduce la velocidad en 2, cuesta 35 de energía y tiene', self.preci2,'% precisión')
-        print ('Ataque super: "energia para mi", roba 40 de energia al rival (no afecta el poder), cuesta 40 de energía y tiene ', self.preci3,'% precisión (si tras el ataque tu enemigo se queda con energia negativa perderá 500 de vida)')
+        print ('Ataque 2: "fatiga", disminuye el poder del enemigo en 0.1 (no afecta el poder), su precisión en 4% (no afecta el poder), le quita 2 cargas de cura (no afecta el poder) y le reduce la velocidad en 10 (no afecta el poder), cuesta 20 de energía, tiene', self.preci2,'% precisión y 3 turnos de cooldown')
+        print ('Ataque super: "energia para mi", roba 40 de energia al rival (no afecta el poder), cuesta 40 de energía, tiene ', self.preci3,'% precisión y 2 turnos de cooldown (si tras el ataque tu enemigo se queda con energia negativa perderá 400 de vida)')
         print ('Vendas: "venda", cura 80 de vida (afecta la mitad del poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía y tiene', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "suerte de principiante", si el primer ataque es "daga" da 5 golpes asegurado')
@@ -5790,35 +6803,7 @@ class Thief ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -5829,39 +6814,13 @@ class Thief ():
                     turn = input('Turno del ladrón:')
                     if turn.lower() == 'daga':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5872,100 +6831,260 @@ class Thief ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 10:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoooooo = randint(0, 100)
                         if unoooooo > self.preci1: 
                             print (self.name, 'falla el golpe!')
                             self.energy -= 5
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         else:
-                            if self.nturnos == 1:
-                                self.power += 0.1
-                                print ('Una daga se clava en', enemy.name, ' cinco veces, le inflijes', 125 * self.power / enemy.defense, 'de daño, le robas', 5 * self.power, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
-                                enemy.health -= 125 * self.power / enemy.defense
-                                self.health += 5 * self.power
-                                enemy.carga_veneno += 1
-                                self.energy -= 10
+                            if self.locura == 0:
+                                if self.nturnos == 1:
+                                    self.power += 0.1
+                                    dano = 125 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una daga se clava en', enemy.name, '5 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.health += 5 * self.power * self.lcura * self.rcura
+                                    enemy.carga_veneno += 1
+                                    self.energy -= 10
+                                    self.energy += 3
+                                    print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
+                                    print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
+                                    break
+                                dddd = randint (0, 5)
+                                if dddd == 0:
+                                    print (enemy.name, 'esquiva la daga y sobrevive')
+                                
+                                elif dddd == 1:
+                                    dano = 45 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una daga se clava en', enemy.name, ' 1 vez y le inflijes', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.energy -= 10
+                                
+                                elif dddd == 2:
+                                    dano = 45 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una daga se clava en', enemy.name, ' 2 veces, le inflijes', dano_total, 'de daño y le robas', 5 * self.power * self.lcura * self.rcura, 'de vida')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.health += 5 * self.power * self.lcura * self.rcura
+                                    self.energy -= 10
+                                    
+                                elif dddd == 3:
+                                    self.power += 0.1
+                                    dano = 45 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una daga se clava en', enemy.name, ' 3 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida y te enfureces aumentando tu poder en 0,1')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.health += 5 * self.power * self.lcura * self.rcura
+                                    self.energy -= 10
+
+                                elif dddd == 4:
+                                    self.power += 0.1
+                                    dano = 45 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una daga se clava en', enemy.name, ' 4 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.health += 5 * self.power * self.lcura * self.rcura
+                                    enemy.carga_veneno += 1
+                                    self.energy -= 10
+
+                                elif dddd == 5:
+                                    self.power += 0.1
+                                    dano = 125 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una daga se clava en', enemy.name, ' 5 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.health += 5 * self.power * self.lcura * self.rcura
+                                    enemy.carga_veneno += 1
+                                    self.energy -= 10
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 3
-                                print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
-                                print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                                break
-                            dddd = randint (0, 5)
-                            if dddd == 0:
-                                print (enemy.name, 'esquiva la daga y sobrevive')
-                            elif dddd == 1:
-                                print ('Una daga se clava en', enemy.name, ' 1 vez y le inflijes', 45 * self.power / enemy.defense, 'de daño')
-                                enemy.health -= 45 * self.power / enemy.defense
-                                self.energy -= 10
-                            elif dddd == 2:
-                                print ('Una daga se clava en', enemy.name, ' 2 veces, le inflijes', 45 * self.power / enemy.defense, 'de daño y le robas', 5 * self.power, 'de vida')
-                                enemy.health -= 45 * self.power / enemy.defense
-                                self.health += 5 * self.power
-                                self.energy -= 10
-                            elif dddd == 3:
-                                self.power += 0.1
-                                print ('Una daga se clava en', enemy.name, ' 3 veces, le inflijes', 45 * self.power / enemy.defense, 'de daño, le robas', 5 * self.power, 'de vida y te enfureces aumentando tu poder en 0,1')
-                                enemy.health -= 45 * self.power / enemy.defense
-                                self.health += 5 * self.power
-                                self.energy -= 10
-                            elif dddd == 4:
-                                self.power += 0.1
-                                print ('Una daga se clava en', enemy.name, ' 4 veces, le inflijes', 45 * self.power / enemy.defense, 'de daño, le robas', 5 * self.power, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
-                                enemy.health -= 45 * self.power / enemy.defense
-                                self.health += 5 * self.power
-                                enemy.carga_veneno += 1
-                                self.energy -= 10
-                            elif dddd == 5:
-                                self.power += 0.1
-                                print ('Una daga se clava en', enemy.name, ' 5 veces, le inflijes', 125 * self.power / enemy.defense, 'de daño, le robas', 5 * self.power, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
-                                enemy.health -= 125 * self.power / enemy.defense
-                                self.health += 5 * self.power
-                                enemy.carga_veneno += 1
-                                self.energy -= 10
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    if self.nturnos == 1:
+                                        self.power += 0.1
+                                        print ('La daga de', self.name, 'toma vida propia rebelandose y le apuñala 5 veces, infligiendose', 125 * self.power / self.defense, 'de daño, te robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y te envenenas')
+                                        self.health -= 125 * self.power / self.defense
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.carga_veneno += 1
+                                        self.energy -= 10
+                                        self.energy += 3
+                                        print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
+                                        print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
+                                        break
+                                    dddd = randint (0, 5)
+                                    if dddd == 0:
+                                        print (self.name, 'se vuelve loco y se intenta apuñalar, afortunadamente esquiva la daga y sobrevive')
+                                    elif dddd == 1:
+                                        print (self.name, 'se vuelve loco y se apuñala con su daga 1 vez y infligiendose', 45 * self.power / self.defense, 'de daño')
+                                        self.health -= 45 * self.power / self.defense
+                                        self.energy -= 10
+                                    elif dddd == 2:
+                                        print (self.name, 'se vuelve loco y se apuñala con su daga 2 veces y infligiendose', 45 * self.power / self.defense, 'de daño y se robas', 5 * self.power * self.lcura * self.rcura, 'de vida')
+                                        self.health -= 45 * self.power / self.defense
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.energy -= 10
+                                    elif dddd == 3:
+                                        self.power += 0.1
+                                        print (self.name, 'se vuelve loco y se apuñala con su daga 3 veces y infligiendose', 45 * self.power / self.defense, 'de daño, se robas', 5 * self.power * self.lcura * self.rcura, 'de vida y te enfureces aumentando tu poder en 0,1')
+                                        self.health -= 45 * self.power / self.defense
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.energy -= 10
+                                    elif dddd == 4:
+                                        self.power += 0.1
+                                        print (self.name, 'se vuelve loco y se apuñala con su daga 4 veces y infligiendose', 45 * self.power / self.defense, 'de daño, se robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y se envenenas')
+                                        self.health -= 45 * self.power / self.defense
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.carga_veneno += 1
+                                        self.energy -= 10
+                                    elif dddd == 5:
+                                        self.power += 0.1
+                                        print (self.name, 'se vuelve loco y se apuñala con su daga 5 veces y infligiendose', 125 * self.power / self.defense, 'de daño, se robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y se envenenas')
+                                        self.health -= 125 * self.power / self.defense
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.carga_veneno += 1
+                                        self.energy -= 10
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 3
+                                else:
+                                    if self.nturnos == 1:
+                                        self.power += 0.1
+                                        dano = 125 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una daga se clava en', enemy.name, '5 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        enemy.carga_veneno += 1
+                                        self.energy -= 10
+                                        self.energy += 3
+                                        print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
+                                        print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
+                                        break
+                                    dddd = randint (0, 5)
+                                    if dddd == 0:
+                                        print (enemy.name, 'esquiva la daga y sobrevive')
+                                    
+                                    elif dddd == 1:
+                                        dano = 45 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una daga se clava en', enemy.name, ' 1 vez y le inflijes', dano_total, 'de daño')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.energy -= 10
+                                    
+                                    elif dddd == 2:
+                                        dano = 45 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una daga se clava en', enemy.name, ' 2 veces, le inflijes', dano_total, 'de daño y le robas', 5 * self.power * self.lcura * self.rcura, 'de vida')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.energy -= 10
+                                    
+                                    elif dddd == 3:
+                                        self.power += 0.1
+                                        dano = 45 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una daga se clava en', enemy.name, ' 3 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida y te enfureces aumentando tu poder en 0,1')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        self.energy -= 10
+
+                                    elif dddd == 4:
+                                        self.power += 0.1
+                                        dano = 45 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una daga se clava en', enemy.name, ' 4 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        enemy.carga_veneno += 1
+                                        self.energy -= 10
+
+                                    elif dddd == 5:
+                                        self.power += 0.1
+                                        dano = 125 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Una daga se clava en', enemy.name, ' 5 veces, le inflijes', dano_total, 'de daño, le robas', 5 * self.power * self.lcura * self.rcura, 'de vida, te enfureces aumentando tu poder en 0,1 y le envenenas')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.health += 5 * self.power * self.lcura * self.rcura
+                                        enemy.carga_veneno += 1
+                                        self.energy -= 10
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'fatiga':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        self.nturnos += 1
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede correr')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -5976,69 +7095,46 @@ class Thief ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 35:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doooooos = randint(0, 100)
                         if doooooos > self.preci2: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 18
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 10
                             self.energy += 3
                         else:
-                            print ('Haces correr al enemigo por todos lados y le da una fatiga, disminuye su poder en 0.05, su precisión en 1%, se le agotan 2 cargas de cura y pierde', 2 * self.power, 'de velocidad')
-                            enemy.power -= 0.05
-                            enemy.preci1 -= 1
-                            enemy.preci2 -= 1
-                            enemy.preci3 -= 1
-                            enemy.precicura -= 1
-                            enemy.precienergia -= 1
+                            print ('Haces correr al enemigo por todos lados y le das una fatiga, disminuye su poder en 0.1, su precisión en 4%, se le agotan 2 cargas de cura y pierde 10 de velocidad')
+                            enemy.power -= 0.1
+                            enemy.preci1 -= 4
+                            enemy.preci2 -= 4
+                            enemy.preci3 -= 4
+                            enemy.precicura -= 4
+                            enemy.precienergia -= 4
                             if enemy.carga_cura > 0:
                                 enemy.carga_cura -= 2
                                 if enemy.carga_cura < 0:
                                     enemy.carga_cura = 0
-                            enemy.velocity -= 2 *self.power
-                            self.energy -= 35
-                            if self.energy < 0:
-                                self.health -= 800
+                            enemy.velocity -= 10
+                            self.energy -= 20
                             self.energy += 3
+                        self.cooldown2 = self.nturnos + 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia para mi':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        self.nturnos += 1
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar el hechizo')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6048,62 +7144,39 @@ class Thief ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 20:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeeeees = randint(0, 100)
                         if treeeeees > self.preci3: 
                             print (self.name, 'falla el golpe!')
                             self.energy -= 20
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         else:
                             print ('¡',self.name, 'saca algo de su mochila! Saca un libro de encantamientos... (', self.name,': ¡robado!) conjura un hechizo y le roba 40 de energia a', self.name)
                             enemy.energy -= 40
                             self.energy += 40
                             self.energy -= 40
-                            if self.energy < 0:
-                                self.health -= 800
                             if enemy.energy < 0:
-                                enemy.health -= 500
+                                enemy.health -= 400
                             self.energy += 3
+                        self.cooldown3 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        self.nturnos += 1
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6113,17 +7186,21 @@ class Thief ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
                         curaaaaaa = randint(0, 100)
                         if curaaaaaa > self.precicura: 
                             print ('¡Falla la venda!')
                             self.energy -= 35
                             if self.energy < 0:
                                 self.health -= 800
-                            self.energy += 2
+                            self.energy += 3
                         else:
-                            if self.health >= 1850 - 80 * (self.power/2) and self.health < 1850:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 1850
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
@@ -6131,8 +7208,8 @@ class Thief ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
-                            elif self.health >= 1850:
+                                self.energy += 3
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
@@ -6141,7 +7218,7 @@ class Thief ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -6152,46 +7229,19 @@ class Thief ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        self.nturnos += 1
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6206,7 +7256,7 @@ class Thief ():
                             print ('¡Falla la canalización!')
                             if self.energy < 0:
                                 self.health -= 800
-                            self.energy += 2
+                            self.energy += 3
                         else:
                             print (self.name, 'canaliza y recupera', 60 * self.power, 'de energía')
                             self.energy += 60 * self.power
@@ -6215,20 +7265,32 @@ class Thief ():
                             self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad energia para mi se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado, 'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-robador = Thief('Leoric', 1850, 1850, 160, 1, 1, 65, 120, 85, 70, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0)
+robador = Thief('Leoric', 1850, 1850, 160, 1, 1, 65, 120, 85, 70, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Shapeshifter ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci11, preci2, preci22, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, carga_cambiaforma, carga_pantera, pantera, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci11, preci2, preci22, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, carga_cambiaforma, carga_pantera, pantera, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -6259,6 +7321,50 @@ class Shapeshifter ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Mago')
         print('Nivel de salud:', self.health)
@@ -6267,8 +7373,8 @@ class Shapeshifter ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "rayo energia"(humano), inflige 80 de daño, cuesta 25 de energía, tiene', self.preci1,'% precisión y te da una carga de cambiaforma (Máx. 5)//"zarpazo" (pantera), inflige 70 de daño, cuesta 30 de energia, tiene', self.preci11,'% de precisión, si tienes una carga de cambiaformas se gasta y te da una carga de pantera, tras tres cargas de pantera infliges 500 de daño')
-        print ('Ataque 2: "escudo"(humano), aumenta tu vida en 150 y tu defensa en 0.1 y te da una carga de cambiaforma, cuesta 60 de energía y tiene', self.preci2,'% precisión//"salto"(pantera), le inflges 20 de daño, cuesta 60 de energia, tiene', self.preci22,'% de precisión, si tienes una carga de cambiaformas esta se consume y infliges 80 más de daño')
-        print ('Ataque super: "transformación", pasa de humano a pantera y viseversa, cuesta 10 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque 2: "escudo"(humano), aumenta tu vida en 150 y tu defensa en 0.1 y te da una carga de cambiaforma, cuesta 30 de energía, tiene', self.preci2,'% precisión y 1 turno de cooldown//"salto"(pantera), le inflges 20 de daño, cuesta 40 de energia, tiene', self.preci22,'% de precisión y 2 turnos de cooldown , si tienes una carga de cambiaformas esta se consume y infliges 80 más de daño')
+        print ('Ataque super: "transformación", pasa de humano a pantera y viseversa, cuesta 10 de energía, tiene', self.preci3,'% precisión y 2 turnos de cooldown')
         print ('Poción curativa: "cura", cura 80 de vida (afecta la mitad del poder), cura 1 hemorragia y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 80 de energía y tiene', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "Incansable", cuando se transforma recupera su velocidad por defecto')
@@ -6296,35 +7402,7 @@ class Shapeshifter ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -6335,40 +7413,12 @@ class Shapeshifter ():
                     turn = input('Turno del cambiaformas:')
                     if turn.lower() == 'rayo energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6378,6 +7428,13 @@ class Shapeshifter ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 25:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         if self.pantera == 0:
                             unooooooo = randint(0, 100)
                             if unooooooo > self.preci1: 
@@ -6387,15 +7444,52 @@ class Shapeshifter ():
                                     self.health -= 800
                                 self.energy += 4
                             else:
-                                print ('Un rayo de energía impacta en el enemigo, inflige', 80 * self.power / enemy.defense, 'de daño a', enemy.name)
-                                enemy.health -= 80 * self.power / enemy.defense
-                                self.carga_cambiaforma += 1
-                                if self.carga_cambiaforma > 5:
-                                    self.carga_cambiaforma = 5
-                                self.energy -= 25
-                                if self.energy < 0:
-                                    self.health -= 800
-                                self.energy += 4
+                                if self.locura == 0:
+                                    dano = 80 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Un rayo de energía impacta en el enemigo, inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.carga_cambiaforma += 1
+                                    if self.carga_cambiaforma > 5:
+                                        self.carga_cambiaforma = 5
+                                    self.energy -= 25
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                                elif self.locura > 0 and self.locura <= 100:
+                                    locuraaa = randint (1, 100)
+                                    if locuraaa > self.locura:
+                                        print ('Una gran locura inunde a', self.name, 'y conjura un rayo de energía que impacta en él, se inflige', 80 * self.power / self.defense, 'de daño')
+                                        self.health -= 80 * self.power / self.defense
+                                        self.carga_cambiaforma += 1
+                                        if self.carga_cambiaforma > 5:
+                                            self.carga_cambiaforma = 5
+                                        self.energy -= 25
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                    else:
+                                        dano = 80 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Un rayo de energía impacta en el enemigo, inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.carga_cambiaforma += 1
+                                        if self.carga_cambiaforma > 5:
+                                            self.carga_cambiaforma = 5
+                                        self.energy -= 25
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                else:
+                                    print ('ERROR')
                             print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                             print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
                         elif self.pantera == 1:
@@ -6408,39 +7502,13 @@ class Shapeshifter ():
                             break
                     elif turn.lower() == 'zarpazo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -6451,6 +7519,13 @@ class Shapeshifter ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 30:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         if self.pantera == 0:
                             if self.energy < 0:
                                 self.health -= 800
@@ -6458,7 +7533,6 @@ class Shapeshifter ():
                             print ('Estas en forma humana, no puedes lanzar este ataque')
                             print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                             print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
-                            break
                         elif self.pantera == 1:
                             unooooooo = randint(0, 100)
                             if unooooooo > self.preci11: 
@@ -6468,57 +7542,88 @@ class Shapeshifter ():
                                     self.health -= 800
                                 self.energy += 4
                             else:
-                                print ('Un zarpazo inflige', 70 * self.power / enemy.defense, 'de daño a', enemy.name)
-                                enemy.health -= 70 * self.power / enemy.defense
-                                if self.carga_cambiaforma > 0:
-                                    self.carga_pantera += 1
-                                    self.carga_cambiaforma -= 1
-                                if self.carga_pantera >= 3:
-                                    print ('Un gran zarpazo atraviesa a', enemy.name, 'y le inflige', 500 * self.power / enemy.defense, 'de daño')
-                                    enemy.health -= 500 * self.power / enemy.defense
-                                    self.carga_pantera = 0
-                                self.energy -= 30
-                                if self.energy < 0:
-                                    self.health -= 800
-                                self.energy += 4
+                                if self.locura == 0:
+                                    dano = 70 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Un zarpazo inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    if self.carga_cambiaforma > 0:
+                                        self.carga_pantera += 1
+                                        self.carga_cambiaforma -= 1
+                                    if self.carga_pantera >= 3:
+                                        dano = 500 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Un gran zarpazo atraviesa a', enemy.name, 'y le inflige', dano_total, 'de daño')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.carga_pantera = 0
+                                    self.energy -= 30
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                                elif self.locura > 0 and self.locura <= 100:
+                                    locuraaa = randint (1, 100)
+                                    if locuraaa > self.locura:
+                                        print ('De la locura', self.name, 'se da un zarpazo a si mismo, infligiendose', 70 * self.power / self.defense, 'de daño')
+                                        self.health -= 70 * self.power / self.defense
+                                        if self.carga_cambiaforma > 0:
+                                            self.carga_pantera += 1
+                                            self.carga_cambiaforma -= 1
+                                        if self.carga_pantera >= 3:
+                                            print ('Un gran zarpazo atraviesa a', self.name, 'y le inflige', 500 * self.power / self.defense, 'de daño')
+                                            self.health -= 500 * self.power / self.defense
+                                            self.carga_pantera = 0
+                                        self.energy -= 30
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                    else:
+                                        dano = 70 * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print ('Un zarpazo inflige', dano_total, 'de daño a', enemy.name)
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        if self.carga_cambiaforma > 0:
+                                            self.carga_pantera += 1
+                                            self.carga_cambiaforma -= 1
+                                        if self.carga_pantera >= 3:
+                                            dano = 500 * self.power / enemy.defense
+                                            reflejo = dano * enemy.reflejar 
+                                            dano_total = dano - reflejo
+                                            enemy.health -= dano_total
+                                            self.health -= reflejo
+                                            print ('Un gran zarpazo atraviesa a', enemy.name, 'y le inflige', dano_total, 'de daño')
+                                            if enemy.reflejar > 0:
+                                                print (enemy.name, 'refleja', reflejo, 'de daño')
+                                            self.carga_pantera = 0
+                                        self.energy -= 30
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                else:
+                                    print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
                     elif turn.lower() == 'escudo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6528,11 +7633,18 @@ class Shapeshifter ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 30:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         if self.pantera == 0:
                             dooos = randint(0, 100)
                             if dooos > self.preci2: 
                                 print ('¡Fallas!')
-                                self.energy -= 30
+                                self.energy -= 15
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 4
@@ -6541,7 +7653,7 @@ class Shapeshifter ():
                                 self.health += 150
                                 self.defense += 0.1
                                 self.carga_cambiaforma += 1
-                                self.energy -= 60
+                                self.energy -= 30
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 4
@@ -6554,42 +7666,18 @@ class Shapeshifter ():
                             print ('Estas en forma de pantera, no puedes lanzar este ataque')
                             print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                             print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
-                            break
+                        self.cooldown2 = self.nturnos + 2
                     elif turn.lower() == 'salto':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este ataque')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -6600,21 +7688,64 @@ class Shapeshifter ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 40:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         if self.pantera == 1:
                             dooos = randint(0, 100)
                             if dooos > self.preci22: 
                                 print ('¡Fallas!')
-                                self.energy -= 2
+                                self.energy -= 20
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 4
                             else:
-                                print (self.name, 'se lanza a por', enemy.name, 'infligiendole', 100 *self.power / enemy.defense, 'de daño')
-                                enemy.health -= 100 * self.power / enemy.defense
-                                self.energy -= 60
-                                if self.energy < 0:
-                                    self.health -= 800
-                                self.energy += 4
+                                if self.carga_cambiaforma > 0:
+                                    danosalto = 100
+                                    self.carga_cambiaforma -= 1
+                                elif self.carga_cambiaforma == 0:
+                                    danosalto = 20
+                                if self.locura == 0:
+                                    dano = danosalto * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'se lanza a por', enemy.name, 'infligiendole', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.energy -= 40
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 4
+                                elif self.locura > 0 and self.locura <= 100:
+                                    locuraaa = randint (1, 100)
+                                    if locuraaa > self.locura:
+                                        print (self.name, 'se lanza a por', enemy.name, ', pero de la locura lo confunde con un árbol y se choca contra este infligiendose', danosalto *self.power / self.defense, 'de daño')
+                                        self.health -= danosalto * self.power / self.defense
+                                        self.energy -= 40
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                    else:
+                                        dano = danosalto * self.power / enemy.defense
+                                        reflejo = dano * enemy.reflejar 
+                                        dano_total = dano - reflejo
+                                        enemy.health -= dano_total
+                                        self.health -= reflejo
+                                        print (self.name, 'se lanza a por', enemy.name, 'infligiendole', dano_total, 'de daño')
+                                        if enemy.reflejar > 0:
+                                            print (enemy.name, 'refleja', reflejo, 'de daño')
+                                        self.energy -= 40
+                                        if self.energy < 0:
+                                            self.health -= 800
+                                        self.energy += 4
+                                else:
+                                    print ('ERROR')
                             print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                             print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
                         elif self.pantera == 0:
@@ -6624,43 +7755,17 @@ class Shapeshifter ():
                             print ('Estas en forma humana, no puedes lanzar este ataque')
                             print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                             print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
-                            break
+                        self.cooldown2 = self.nturnos + 3
                     elif turn.lower() == 'transformacion':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede transformarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6670,12 +7775,17 @@ class Shapeshifter ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        trees = randint(0, 100)
+                        if self.energy <= 10:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
+                        trees = randint(1, 100)
                         if trees > self.preci3: 
                             print ('¡', self.name, 'falla el golpe!')
                             self.energy -= 5
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         else:
                             if self.pantera == 0:
@@ -6683,8 +7793,6 @@ class Shapeshifter ():
                                 self.pantera += 1
                                 self.velocity = 78
                                 self.energy -= 10
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 4
                             elif self.pantera == 1:
                                 print (self.name, 'pasa a ser un humano')
@@ -6692,47 +7800,20 @@ class Shapeshifter ():
                                 self.carga_pantera = 0
                                 self.energy -= 10
                                 self.velocity = 32
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 4
+                        self.cooldown3 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
                     elif turn.lower() == 'cura':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6742,6 +7823,10 @@ class Shapeshifter ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
                         curaaa = randint(0, 100)
                         if curaaa > self.precicura: 
                             print ('Se rompe la poción!')
@@ -6750,9 +7835,9 @@ class Shapeshifter ():
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            if self.health >= 2100 - 80 * (self.power/2) and self.health < 2100:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te tomas una poción que te cura toda la vida')
-                                self.health = 2100
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
@@ -6761,7 +7846,7 @@ class Shapeshifter ():
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 2
-                            elif self.health >= 2100:
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
@@ -6786,40 +7871,14 @@ class Shapeshifter ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -6843,20 +7902,32 @@ class Shapeshifter ():
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados, tienes', self.carga_cambiaforma, 'cargas de cambiaformas', self.carga_pantera, 'cargas de pantera y', self.pantera, '(Si es 0 eres humano y si 1 eres pantera)' ,'\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad transformacion se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado, 'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-pantera = Shapeshifter('Hildegund', 2100, 2100, 300, 1, 1, 33, 85, 120, 85, 90, 200, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0)
+pantera = Shapeshifter('Hildegund', 2100, 2100, 300, 1, 1, 33, 85, 120, 85, 90, 200, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Healer ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -6882,6 +7953,50 @@ class Healer ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Mago')
         print('Nivel de salud:', self.health)
@@ -6890,8 +8005,8 @@ class Healer ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "Heal", cura 1 hemorragia y 80 de vida a tu objetivo y lo purificas quitandole 1 maldición, cuesta 40 de energía, tiene', self.preci1,'% precisión')
-        print ('Ataque 2: "Bendecir", aplica a tu objetivo 2 cargas de cura (no afecta el poder), cuesta 70 de energía y tiene', self.preci2,'% precisión')
-        print ('Ataque super: "Proteger", cura a tu objetivo 100 de vida y aumenta su poder y su defensa en 0.1, cuesta 120 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque 2: "Bendecir", aplica a tu objetivo 2 cargas de cura (no afecta el poder), cuesta 60 de energía, tiene', self.preci2,'% precisión y 1 turno de cooldown')
+        print ('Ataque super: "Proteger", cura a tu objetivo 100 de vida y aumenta su poder y su defensa en 0.1, cuesta 100 de energía, tiene', self.preci3,'% precisión y 2 turnos de cooldown')
         print ('Poción curativa: "cura", cura 80 de vida (afecta la mitad del poder), cura 1 hemorragia y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 80 de energía y tiene', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "Apoyo", puedes dar tu cura a tu objetivo escribiendo "curar", además de poder canalizar para tu objetivo escribiendo "energiar"')
@@ -6919,35 +8034,7 @@ class Healer ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -6958,40 +8045,10 @@ class Healer ():
                     turn = input('Turno de la curandera:')
                     if turn.lower() == 'heal':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -7001,6 +8058,13 @@ class Healer ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 40:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unooo = randint(0, 100)
                         if unooo > self.preci1: 
                             print ('¡', self.name, 'falla la cura!')
@@ -7009,8 +8073,8 @@ class Healer ():
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            print (self.name, 'cura 1 hemorragia y', 80 * self.power, 'de vida a tu objetivo y lo purificas quitandole 1 maldición')
-                            enemy.health += 80 * self.power
+                            print (self.name, 'cura 1 hemorragia y', 80 * self.power * self.lcura * enemy.rcura, 'de vida a tu objetivo y lo purificas quitandole 1 maldición')
+                            enemy.health += 80 * self.power * self.lcura * enemy.rcura
                             if enemy.carga_hemorragia > 0:
                                 enemy.carga_hemorragia -= 1
                             if enemy.carga_maldita > 0:
@@ -7023,39 +8087,11 @@ class Healer ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'bendecir':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7066,63 +8102,37 @@ class Healer ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         dooos = randint(0, 100)
                         if dooos > self.preci2: 
                             print (self.name, 'se confunde de hechizo y convierte una hoja de pasto en un gusano')
-                            self.energy -= 35
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 30
                             self.energy += 4
                         else:
                             if enemy.carga_cura >= 4:
                                 print (enemy.name, 'está al límite de cargas de cura')
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 4
                             else:
                                 print (self.name, 'bendice a', enemy.name, 'aplicandole 2 cargas de cura')
                                 enemy.carga_cura += 2
-                                self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
+                                self.energy -= 60
                                 self.energy += 4
+                        self.cooldown2 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'proteger':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7133,59 +8143,35 @@ class Healer ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 100:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treees = randint(0, 100)
                         if treees > self.preci3: 
                             print ('¡', self.name, 'se equivoca de hechizo y invoca una arañita inofensiva!')
-                            self.energy -= 60
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 50
                             self.energy += 4
                         else:
-                            print (self.name, 'protege a',enemy.name, 'curandole', 100 * self.power, 'de vida y aumentandole el poder y la defensa en 0.1')
-                            enemy.health += 100 * self.power
+                            print (self.name, 'protege a',enemy.name, 'curandole', 100 * self.power * self.lcura * enemy.rcura, 'de vida y aumentandole el poder y la defensa en 0.1')
+                            enemy.health += 100 * self.power * self.lcura * enemy.rcura
                             enemy.power += 0.1
                             enemy.defense += 0.1
-                            self.energy -= 120
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 100
                             self.energy += 4
+                        self.cooldown3 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'cura':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7196,6 +8182,10 @@ class Healer ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
                         curaaa = randint(0, 100)
                         if curaaa > self.precicura: 
                             print ('Se rompe la poción!')
@@ -7204,9 +8194,9 @@ class Healer ():
                                 self.health -= 800
                             self.energy += 4
                         else:
-                            if self.health >= 1700 - 80 * (self.power/2) and self.health < 1700:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te tomas una poción que te cura toda la vida')
-                                self.health = 1700
+                                self.health = self.maxhealth
                                 if self.carga_hemorragia > 0:
                                     self.carga_hemorragia -= 1
                                 if self.carga_quemado > 0:
@@ -7215,7 +8205,7 @@ class Healer ():
                                 if self.energy < 0:
                                     self.health -= 800
                                 self.energy += 2
-                            elif self.health >= 1700:
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_hemorragia > 0:
                                     self.carga_hemorragia -= 1
@@ -7240,36 +8230,11 @@ class Healer ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'curar':
                         #cargas
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede curar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7280,6 +8245,10 @@ class Healer ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 4
+                            break
                         curaaa = randint(0, 100)
                         if curaaa > self.precicura: 
                             print ('Se rompe la poción!')
@@ -7302,39 +8271,11 @@ class Healer ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7348,52 +8289,20 @@ class Healer ():
                         energiaaa = randint(0, 100)
                         if energiaaa > self.precienergia: 
                             print ('¡', self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         else:
                             print (self.name, 'canaliza y recupera', 80 * self.power, 'de energía')
                             self.energy += 80 * self.power
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energiar':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7407,31 +8316,39 @@ class Healer ():
                         energiaaa = randint(0, 100)
                         if energiaaa > self.precienergia: 
                             print ('¡', self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         else:
                             print (self.name, 'canaliza y recupera', 80 * self.power, 'de energía para', enemy.name)
                             enemy.energy += 80 * self.power
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad proteger se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('(Las inmovilizaciones no te afectan)')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-curandera = Healer('Hawise', 1700, 1700, 200, 1, 1, 35, 100, 80, 85, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0)
+curandera = Healer('Hawise', 1700, 1700, 200, 1, 1, 35, 100, 80, 85, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Mace ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -7457,6 +8374,50 @@ class Mace ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Guerrero')
         print('Nivel de salud:', self.health)
@@ -7465,8 +8426,8 @@ class Mace ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "Golpe defensivo", haces 20 de daño y aumentas tu defensa en 0.08, cuesta 5 de energía y tiene un', self.preci1,'% precisión')
-        print ('Ataque 2: "Agitador de tierra", inflige 240 de daño, cuesta 140 de energía y tiene un', self.preci2,'% precisión')
-        print ('Ataque super: "Salto profundo", inflige 150 de daño y aturdes a tu enemigo 2 turnos (no es acumulable), cuesta 200 de energía y tiene un', self.preci3,'% precisión')
+        print ('Ataque 2: "Agitador de tierra", inflige 240 de daño, cuesta 80 de energía, tiene un', self.preci2,'% precisión y 2 turnos de cooldown')
+        print ('Ataque super: "Salto profundo", inflige 150 de daño y aturdes a tu enemigo 2 turnos (no es acumulable), cuesta 100 de energía, tiene un', self.preci3,'% precisión, y 3 turnos de cooldown')
         print ('Vendas: "venda", cura 80 de vida (afecta la mitad del poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene un', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía y tiene un', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "concentración" en una canalización recuperas el doble de energia')
@@ -7494,35 +8455,7 @@ class Mace ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -7533,39 +8466,13 @@ class Mace ():
                     turn = input('Turno del macero:')
                     if turn.lower() == 'golpe defensivo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                            self.health -= 32 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7576,58 +8483,66 @@ class Mace ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 5:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoo = randint (0,100)
                         if unoo > self.preci1: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 1
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 2.5
                             self.energy += 2
                         else:
-                            print ('Un mazazo le hace un gran golpe en el enemigo que le inflige', 20 * self.power / enemy.defense, 'de daño a', enemy.name, ', y aumentas tu propia defensa en 0.08')
-                            enemy.health -= 20 * self.power / enemy.defense
-                            self.defense += 0.08
-                            self.energy -= 5
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 2
+                            if self.locura == 0:
+                                dano = 20 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Un mazazo le hace un gran golpe en el enemigo que le inflige', dano_total, 'de daño a', enemy.name, ', y aumentas tu propia defensa en 0.08')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                self.defense += 0.08
+                                self.energy -= 5
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('De la locura te pegas un mazazo que te inflige', 20 * self.power / self.defense, 'de daño, y aumentas tu propia defensa en 0.08')
+                                    self.health -= 20 * self.power / self.defense
+                                    self.defense += 0.08
+                                    self.energy -= 5
+                                    self.energy += 2
+                                else:
+                                    dano = 20 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Un mazazo le hace un gran golpe en el enemigo que le inflige', dano_total, 'de daño a', enemy.name, ', y aumentas tu propia defensa en 0.08')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.defense += 0.08
+                                    self.energy -= 5
+                                    self.energy += 2
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'agitador de tierra':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este ataque')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7638,57 +8553,64 @@ class Mace ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 80:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doos = randint(0, 100)
                         if doos > self.preci2: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 70
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 40
                             self.energy += 2
                         else:
-                            print ('Agita la tierra alrededor del enemigo y le inflige', 240 * self.power / enemy.defense, 'de daño a', enemy.name)
-                            enemy.health -= 240 * self.power / enemy.defense
-                            self.energy -= 140
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 2
+                            if self.locura == 0:
+                                dano = 240 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Agita la tierra alrededor del enemigo y le inflige', dano_total, 'de daño a', enemy.name)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                self.energy -= 80
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('Te vuelves loco y al querer azotar la tierra con tu maza te partes el pie, te infliges', 240 * self.power / self.defense, 'de daño')
+                                    self.health -= 240 * self.power / self.defense
+                                    self.energy -= 80
+                                    self.energy += 2
+                                else:
+                                    dano = 240 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Agita la tierra alrededor del enemigo y le inflige', dano_total, 'de daño a', enemy.name)
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    self.energy -= 80
+                                    self.energy += 2
+                            else:
+                                print ('ERROR')
+                        self.cooldown2 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'salto profundo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este ataque')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -7699,63 +8621,80 @@ class Mace ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 100:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         trees = randint(0, 100)
                         if trees > self.preci3: 
                             print ('¡Fallas!')
-                            self.energy -= 100
+                            self.energy -= 50
                             if self.energy < 0:
                                 self.health -= 800
                             self.energy += 2
                         else:
-                            print ('Saltas sobre tu enemigo infligiendole', 150 * self.power / enemy.defense, 'de daño')
-                            enemy.health -= 150 * self.power / enemy.defense
-                            if enemy.carga_stun == 0:
-                                enemy.carga_stun += 2
-                                print('Aturdes a', enemy.name, '2 turnos')
+                            if self.locura == 0:
+                                dano = 150 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Saltas sobre tu enemigo infligiendole', dano_total, 'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                if enemy.carga_stun == 0:
+                                    enemy.carga_stun += 2
+                                    print('Aturdes a', enemy.name, '2 turnos')
+                                else:
+                                    print(enemy.name, 'ya está stuneado')
+                                self.energy -= 100
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('Saltas sobre tu enemigo pero de la locura te das con tu propio mazo en toda tu cabeza infligiendote', 150 * self.power / self.defense, 'de daño')
+                                    self.health -= 150 * self.power / self.defense
+                                    if self.carga_stun == 0:
+                                        self.carga_stun += 2
+                                        print('Te aturdes 2 turnos')
+                                    else:
+                                        print('Ya estabas stuneado')
+                                    self.energy -= 100
+                                    self.energy += 2
+                                else:
+                                    dano = 150 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Saltas sobre tu enemigo infligiendole', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    if enemy.carga_stun == 0:
+                                        enemy.carga_stun += 2
+                                        print('Aturdes a', enemy.name, '2 turnos')
+                                    else:
+                                        print(enemy.name, 'ya está stuneado')
+                                    self.energy -= 100
+                                    self.energy += 2
                             else:
-                                print(enemy.name, 'ya está stuneado')
-                            self.energy -= 200
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 2
+                                print ('ERROR')
+                        self.cooldown3 = self.nturnos + 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -7765,34 +8704,32 @@ class Mace ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 8:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 70
+                            break
                         curaa = randint(0, 100)
                         if curaa > self.precicura: 
                             print ('¡Falla la venda!')
                             self.energy -= 35
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         else:
-                            if self.health >= 1980 - 80 * (self.power/2) and self.health < 1980:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 1980
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 2
-                            elif self.health >= 1980:
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 2
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
@@ -7802,47 +8739,19 @@ class Mace ():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -7861,25 +8770,35 @@ class Mace ():
                         else:
                             print (self.name, 'canaliza y recupera,', 120 * self.power,'de energía')
                             self.energy += 120 * self.power
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad salto profundo se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado, 'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-maza = Mace ('Björn', 1980, 1980, 220, 1, 1.1, 39, 90, 95, 85, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0)
+maza = Mace ('Björn', 1980, 1980, 220, 1, 1.1, 39, 90, 95, 85, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Fires ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -7905,6 +8824,50 @@ class Fires ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Ágil')
         print('Nivel de salud:', self.health)
@@ -7913,8 +8876,8 @@ class Fires ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "fuego", aplica 1 quemadura en tu enemigo (afecta tu poder, pero no su defensa), cuesta 30 de energía y tiene', self.preci1,'% precisión')
-        print ('Ataque 2: "llamas", aumentas tu defensa en 0.25 (no afecta el poder), cuesta 65 de energía y tiene', self.preci2,'% precisión')
-        print ('Ataque super: "Volcan", aplicas 4 quemaduras (afecta tu poder, pero no su defensa), cuesta 250 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque 2: "llamas", aumentas tu defensa en 0.25 (no afecta el poder), cuesta 40 de energía y tiene', self.preci2,'% precisión')
+        print ('Ataque super: "Volcan", aplicas 4 quemaduras (afecta tu poder, pero no su defensa), cuesta 120 de energía, tiene', self.preci3,'% precisión y 3 turnos de cooldown')
         print ('Vendas: "venda", cura 80 de vida (no afecta el poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía y', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "ignifugo", las quemaduras no te hacen daño')
@@ -7942,34 +8905,7 @@ class Fires ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura te hace cosquillas')
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -7980,39 +8916,10 @@ class Fires ():
                     turn = input('Turno del ígneo:')
                     if turn.lower() == 'fuego':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura te hace cosquillas')
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -8022,6 +8929,13 @@ class Fires ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 30:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoooo = randint(0, 100)
                         if unoooo > self.preci1: 
                             print (self.name, 'falla el golpe!')
@@ -8030,48 +8944,41 @@ class Fires ():
                                 self.health -= 800
                             self.energy += 3
                         else:
-                            print ('Quemas a', enemy.name, 'le aplicas', 1 * self.power, 'quemaduras')
-                            enemy.carga_quemado += 1 * self.power
-                            self.energy -= 30
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 3
+                            if self.locura == 0:
+                                print ('Quemas a', enemy.name, ',le aplicas', 1 * self.power, 'quemaduras')
+                                enemy.carga_quemado += 1 * self.power
+                                self.energy -= 30
+                                if self.energy < 0:
+                                    self.health -= 800
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print ('Te vuelves loco y te quemas, te aplicas', 1 * self.power, 'quemaduras')
+                                    self.carga_quemado += 1 * self.power
+                                    self.energy -= 30
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 3
+                                else:
+                                    print ('Quemas a', enemy.name, ',le aplicas', 1 * self.power, 'quemaduras')
+                                    enemy.carga_quemado += 1 * self.power
+                                    self.energy -= 30
+                                    if self.energy < 0:
+                                        self.health -= 800
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'llamas':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura te hace cosquillas')
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8082,56 +8989,32 @@ class Fires ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 40:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doooos = randint(0, 100)
                         if doooos > self.preci2: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 32.5
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 20
                             self.energy += 3
                         else:
                             print ('Te envuelves en llamas, estas te fortalecen')
                             self.defense += 0.25 
-                            self.energy -= 65
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 40
                         self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'volcan':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura te hace cosquillas')
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8142,56 +9025,48 @@ class Fires ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 120:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeees = randint(0, 100)
                         if treeees > self.preci3: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 125
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 60
                             self.energy += 3
                         else:
-                            print (self.name, 'invoca la fuerza de un volcán y aplica', 4 * self.power,'quemaduras a', enemy.name)
-                            enemy.carga_quemado += 4 * self.power
-                            self.energy -= 250
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 3
+                            if self.locura == 0:
+                                print (self.name, 'invoca la fuerza de un volcán y aplica', 4 * self.power,'quemaduras a', enemy.name)
+                                enemy.carga_quemado += 4 * self.power
+                                self.energy -= 120
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, 'invoca la fuerza de un volcán, pero se vuelve loco y se auto-aplica', 4 * self.power,'quemaduras')
+                                    self.carga_quemado += 4 * self.power
+                                    self.energy -= 120
+                                    self.energy += 3
+                                else:
+                                    print (self.name, 'invoca la fuerza de un volcán y aplica', 4 * self.power,'quemaduras a', enemy.name)
+                                    enemy.carga_quemado += 4 * self.power
+                                    self.energy -= 120
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+                        self.cooldown3 = self.nturnos + 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura te hace cosquillas')
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8202,17 +9077,21 @@ class Fires ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
                         curaaaaa = randint(0, 100)
                         if curaaaaa > self.precicura: 
                             print ('¡falla la venda!')
                             self.energy -= 35
                             if self.energy < 0:
                                 self.health -= 800
-                            self.energy += 4
+                            self.energy += 3
                         else:
-                            if self.health >= 1630 - 80 * (self.power/2) and self.health < 1630:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 1700
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
@@ -8220,8 +9099,8 @@ class Fires ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
-                            elif self.health >= 1630:
+                                self.energy += 3
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
@@ -8230,7 +9109,7 @@ class Fires ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -8241,43 +9120,16 @@ class Fires ():
                                 self.energy -= 70
                                 if self.energy < 0:
                                     self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura te hace cosquillas')
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8291,31 +9143,39 @@ class Fires ():
                         energiaaaa = randint(0, 100)
                         if energiaaaa > self.precienergia: 
                             print (self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         else:
                             print (self.name, 'canaliza y recupera', 60 * self.power, 'de energía')
                             self.energy += 60 * self.power
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad volcan se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado, 'turnos')
+                            print ('(Las inmovilizaciones no te afectan)')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-igneo = Fires('Finnian', 1630, 1630, 130, 1, 1, 64, 80, 90, 100, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0)
+igneo = Fires('Finnian', 1630, 1630, 130, 1, 1, 64, 80, 90, 100, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Snake_Charmer():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -8341,6 +9201,50 @@ class Snake_Charmer():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Ágil')
         print('Nivel de salud:', self.health)
@@ -8349,8 +9253,8 @@ class Snake_Charmer():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "bocajarro", inflige 5 de daño entre 10 a 50 veces, cuesta 30 de energía, tiene', self.preci1,'% precisión y tiene 20% de probabilidades de infligir un sangrado en tu enemigo')
-        print ('Ataque 2: "agil", aumenta la velocidad de tu objetivo en 16 (aumentado por la mitad del poder), cuesta 70 de energía y', self.preci2,'% precisión')
-        print ('Ataque super: "serpiente", tu serpiente le inflige tres venenos y lo aturde 1 turno, cuesta 200 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque 2: "agil", aumenta la velocidad de tu objetivo en 16 (aumentado por la mitad del poder), cuesta 40 de energía,', self.preci2,'% precisión y 2 turnos de cooldown')
+        print ('Ataque super: "serpiente", tu serpiente le inflige tres venenos y lo aturde 1 turno, cuesta 160 de energía, tiene', self.preci3,'% precisión y 2 turnos de cooldown')
         print ('Vendas: "venda", cura 80 de vida (no afecta el poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía y', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "amigo", (en caso de un combate de más de dos) mientras estás muerto tu serpiente ataca a tu objetivo')
@@ -8381,35 +9285,7 @@ class Snake_Charmer():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -8420,39 +9296,13 @@ class Snake_Charmer():
                     turn = input('Turno del encantador de serpientes:')
                     if turn.lower() == 'bocajarro':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8463,62 +9313,84 @@ class Snake_Charmer():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 30:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoooo = randint(0, 100)
                         if unoooo > self.preci1: 
                             print (self.name, 'falla el golpe!')
                             self.energy -= 15
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         else:
-                            bocajarro = randint (10, 50)
-                            print (self.name, 'le da un bocajarro de', bocajarro, 'golpes a', enemy.name, ', le inflige', (5 * self.power / enemy.defense) * bocajarro, 'de daño')
-                            enemy.health -= (5 * self.power / enemy.defense) * bocajarro
-                            flechaaa = randint (1, 100)
-                            if flechaaa <= 20:
-                                enemy.carga_sangrado += 1
-                                print ('Tras un fuerte puñetazo un sangrado surge en', enemy.name)
-                            self.energy -= 30
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 3
+                            if self.locura == 0:
+                                bocajarro = randint (10, 50)
+                                dano = (5 * self.power / enemy.defense) * bocajarro
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (self.name, 'le da un bocajarro de', bocajarro, 'golpes a', enemy.name, ', le inflige', dano_total, 'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                punetazooo = randint (1, 100)
+                                if punetazooo <= 20:
+                                    enemy.carga_sangrado += 1
+                                    print ('Tras un fuerte puñetazo un sangrado surge en', enemy.name)
+                                self.energy -= 30
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    bocajarro = randint (10, 50)
+                                    dano = (5 * self.power / self.defense) * bocajarro
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'se vuelve loco, se da un bocajarro de', bocajarro, 'golpes infligiendose', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    punetazooo = randint (1, 100)
+                                    if punetazooo <= 20:
+                                        self.carga_sangrado += 1
+                                        print ('Tras un fuerte puñetazo un sangrado surge en', self.name)
+                                    self.energy -= 30
+                                    self.energy += 3
+                                else:
+                                    bocajarro = randint (10, 50)
+                                    dano = (5 * self.power / enemy.defense) * bocajarro
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'le da un bocajarro de', bocajarro, 'golpes a', enemy.name, ', le inflige', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    punetazooo = randint (1, 100)
+                                    if punetazooo <= 20:
+                                        enemy.carga_sangrado += 1
+                                        print ('Tras un fuerte puñetazo un sangrado surge en', enemy.name)
+                                    self.energy -= 30
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'agil':
+                    elif turn.lower() == 'agil' or turn.lower() == 'ágil':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8529,58 +9401,36 @@ class Snake_Charmer():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 40:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doooos = randint(0, 100)
                         if doooos > self.preci2: 
                             print (self.name, 'se tropieza!')
-                            self.energy -= 35
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 20
                             self.energy += 3
                         else:
-                            print ('Aumentas tu velocidad en', 16 * (self.power / 2))
-                            self.velocity += 16 * (self.power / 2)
-                            self.energy -= 70
-                            if self.energy < 0:
-                                self.health -= 800
-                        self.energy += 3
+                            print ('Aumentas la velocidad de', enemy.name,'en', 16 * (self.power / 2))
+                            enemy.velocity += 16 * (self.power / 2)
+                            self.energy -= 40
+                            self.energy += 3
+                        self.cooldown2 += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'serpiente':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print ('La serpiente de', self.name, 'está silenciada')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -8590,59 +9440,54 @@ class Snake_Charmer():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 160:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeees = randint(0, 100)
                         if treeees > self.preci3: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 100
-                            if self.energy < 0:
-                                self.health -= 800
+                            self.energy -= 80
                             self.energy += 3
                         else:
-                            print (self.name, 'lanza su serpiente a', enemy.name, 'y le aplica 3 venenos y lo aturde 1 turno')
-                            enemy.carga_veneno += 3
-                            enemy.carga_stun += 1
-                            self.energy -= 200
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 3
+                            if self.locura == 0:
+                                print (self.name, 'lanza su serpiente a', enemy.name, 'le aplica 3 venenos y lo aturde 1 turno')
+                                enemy.carga_veneno += 3
+                                enemy.carga_stun += 1
+                                self.energy -= 160
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, 'lanza su serpiente pero está se vuelve loca y le muerde, aplicandole 3 venenos y aturdiendole 1 turno')
+                                    self.carga_veneno += 3
+                                    self.carga_stun += 1
+                                    self.energy -= 160
+                                    self.energy += 3
+                                else:
+                                    print (self.name, 'lanza su serpiente a', enemy.name, 'le aplica 3 venenos y lo aturde 1 turno')
+                                    enemy.carga_veneno += 3
+                                    enemy.carga_stun += 1
+                                    self.energy -= 160
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+                        self.cooldown3 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -8652,35 +9497,33 @@ class Snake_Charmer():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 70:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 3
+                            break
                         curaaaaa = randint(0, 100)
                         if curaaaaa > self.precicura: 
                             print ('¡falla la venda!')
                             self.energy -= 35
-                            if self.energy < 0:
-                                self.health -= 800
-                            self.energy += 4
+                            self.energy += 3
                         else:
-                            if self.health >= 1900 - 80 * (self.power/2) and self.health < 1900:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 1900
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
-                                self.energy += 2
-                            elif self.health >= 1900:
+                                self.energy += 3
+                            elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -8689,47 +9532,19 @@ class Snake_Charmer():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                if self.energy < 0:
-                                    self.health -= 800
-                                self.energy += 2
+                                self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -8742,31 +9557,39 @@ class Snake_Charmer():
                         energiaaaa = randint(0, 100)
                         if energiaaaa > self.precienergia: 
                             print (self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         else:
                             print (self.name, 'canaliza y recupera', 60 * self.power, 'de energía')
                             self.energy += 60
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad serpiente se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado ,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado,'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-serpientero = Snake_Charmer('Rayder', 1900, 1900, 140, 1, 1, 58, 120, 80, 95, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0)
+serpientero = Snake_Charmer('Rayder', 1900, 1900, 140, 1, 1, 58, 120, 80, 95, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Apostador():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, sombra, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, sombra, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -8793,6 +9616,50 @@ class Apostador():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: ¿¿??')
         print('Nivel de salud:', self.health)
@@ -8802,9 +9669,11 @@ class Apostador():
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "apostar", tiene un 20% de probabilidades de infligir 180 de daño, tiene un 20% de probabilidades de curarte 10 de vida, tiene un 20% de probabilidades de aumentar tu poder en 0.1 (no afecta el poder), tiene un 20% de probabilidades de aumentar tu defensa en 0.1 (no afecta el poder) y tiene un 20% de probabilidades de aumentar tu velocidad en 4, cuesta 3 de energía, tiene', self.preci1,'% precisión')
         print ('Ataque 2: "invocar", genera una sombra, cuesta 10 de energía y', self.preci2,'% precisión')
-        print ('Ataque super: "bomba", tienes un 40% de probabilidades de infligir a tu enemigo 800 de daño (no afecta la defensa superior a 1), 60% de probabilidades de auto infligirte 600 de daño (no afecta la defensa superior a 1), cuesta 20 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque super: "bomba", tienes un 40% de probabilidades de infligir a tu enemigo 800 de daño (no afecta la defensa superior a 1), 60% de probabilidades de auto infligirte 600 de daño (no afecta la defensa superior a 1), cuesta 20 de energía, tiene', self.preci3,'% precisión y 1 turno de cooldown')
         print ('Vendas: "venda", cura 80 de vida (no afecta el poder), cura 1 sangrado y 1 quemadura, cuesta 5 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 4 de energía y', self.precienergia,'% precisión')
+        print ('Habilidad pasiva: "maleta", tienes dos habilidades pasivas extra')
+        print ('Habilidad pasiva: "casinooo", no puedes volverte loco (no más de lo que ya estás)')
         print ('Habilidad pasiva: "amigo", (en caso de un combate de más de dos) mientras estás muerto tus sombras atacan a tu objetivo')
         print ('(Cada turno recuperas 2 de energia)(Si te quedas con energía negativa pierdes 800 puntos de vida) (Lo que hagas en tu turno será multiplicado por el poder y el daño que recibas será dividido por la defensa)', '\n')
     def hello(self):
@@ -8836,35 +9705,7 @@ class Apostador():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -8875,40 +9716,10 @@ class Apostador():
                     turn = input('Turno del apostador:')
                     if turn.lower() == 'apostar':
                         #cargas
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -8918,6 +9729,13 @@ class Apostador():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 3:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unoooo = randint(0, 100)
                         if unoooo > self.preci1: 
                             print ('Pierdes la apuesta')
@@ -8928,12 +9746,18 @@ class Apostador():
                         else:
                             cccc = randint (0, 4)
                             if cccc == 0:
-                                print ('En la apuesta sale que', enemy.name, 'pierde', 180 * self.power / enemy.defense)
-                                enemy.health -= 180 * self.power / enemy.defense
+                                dano = 180 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('En la apuesta sale que', enemy.name, 'pierde', dano_total)
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
                                 self.energy -= 3
                             elif cccc == 1:
-                                print ('En la apuesta sale que', self.name, 'recupera', 10 * self.power, 'de vida')
-                                self.health -= 10 * self.power
+                                print ('En la apuesta sale que', self.name, 'recupera', 10 * self.power * self.lcura * self.rcura, 'de vida')
+                                self.health += 10 * self.power  * self.lcura * self.rcura
                                 self.energy -= 3
                             elif cccc == 2:
                                 print ('En la apuesta sale que', self.name, 'aumenta su poder en 0.1')
@@ -8955,39 +9779,11 @@ class Apostador():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'invocar':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede invocar sombras')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -8998,57 +9794,32 @@ class Apostador():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 10:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doooos = randint(0, 100)
                         if doooos > self.preci2: 
-                            print ('Sale el sol!')
+                            print ('Salió el sol y no hay sombras!')
                             self.energy -= 5
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         else:
                             print ('invocas una sombra')
                             self.sombra += 1
                             self.energy -= 10
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas, estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados y tienes', self.sombra, 'sombras', '\n')
                     elif turn.lower() == 'bomba':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede detonar sus bombas')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9059,22 +9830,39 @@ class Apostador():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 20:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeees = randint(0, 100)
                         if treeees > self.preci3: 
                             print ('La bomba explota en el aire')
                             self.energy -= 10
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         else:
                             boombaaa = randint (1, 100)
                             if boombaaa <= 50:
                                 if enemy.defense > 1:
-                                    print (self.name, 'lanza una bomba nuclear a', enemy.name, 'y le quita', 800 * self.power, 'de vida')
-                                    enemy.health -= 800 * self.power
+                                    dano = 800 * self.power
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'lanza una bomba nuclear a', enemy.name, 'y le quita', dano_total, 'de vida')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
                                 else:
-                                    print (self.name, 'lanza una bomba nuclear a', enemy.name, 'y le quita', 800 * self.power / enemy.defense, 'de vida')
-                                    enemy.health -= 800 * self.power / enemy.defense
+                                    dano = 800 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'lanza una bomba nuclear a', enemy.name, 'y le quita', dano_total, 'de vida')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
                             elif boombaaa >= 51:
                                 if enemy.defense > 1:
                                     print (self.name, 'lanza una bomba nuclear a', enemy.name, ', aunque la bomba se detona antes y, ', self.name, 'se quita 600 de vida')
@@ -9083,46 +9871,17 @@ class Apostador():
                                     print (self.name, 'lanza una bomba nuclear a', enemy.name, ', aunque la bomba se detona antes y, ', self.name, 'se quita 600 de vida')
                                     self.health -= 600 * self.power / self.defense
                             self.energy -= 20
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
+                        self.cooldown3 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9133,24 +9892,24 @@ class Apostador():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
+                        if self.energy <= 5:
+                            print (self.name, 'no tiene suficiente energia')
+                            self.energy += 2
+                            break
                         curaaaaa = randint(0, 100)
                         if curaaaaa > self.precicura: 
                             print ('¡falla la venda!')
                             self.energy -= 2.5
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         else:
-                            if self.health >= 1820 - 80 * (self.power/2) and self.health < 1820:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
-                                self.health = 1820
+                                self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 5
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 2
                             elif self.health >= 1820:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
@@ -9159,8 +9918,6 @@ class Apostador():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 0
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 2
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
@@ -9170,46 +9927,16 @@ class Apostador():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 5
-                                if self.energy < 0:
-                                    self.health -= 800
                                 self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9223,31 +9950,38 @@ class Apostador():
                         energiaaaa = randint(0, 100)
                         if energiaaaa > self.precienergia: 
                             print (self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         else:
                             print (self.name, 'canaliza y recupera', 4 * self.power, 'de energía')
                             self.energy += 4
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100')
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado, 'turnos')
+                            print ('Las inmovilizaciones no te afectan')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-poker = Apostador('@#-·-#@', 1820, 1820, 10, 1, 1, 29, 300, 300, 300, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+poker = Apostador('@#-·-#@', 1820, 1820, 10, 1, 1, 29, 300, 300, 300, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Natural ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -9273,6 +10007,50 @@ class Natural ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Natural')
         print('Nivel de salud:', self.health)
@@ -9280,10 +10058,10 @@ class Natural ():
         print ('Poder:', self.power)
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
-        print ('Ataque 1: "plantar", aplica 1 carga de cura en tu objetivo y quita 1 quemadura (no afecta el poder), cuesta 8 de energía, tiene', self.preci1,'% precisión')
-        print ('Ataque 2: "zarza", hace 120 de daño (si afecta el poder) y aplica un sangrado (no afecta el poder), cuesta 60 de energía y tiene', self.preci2,'% precisión')
+        print ('Ataque 1: "plantar", aplica 1 carga de cura en tu objetivo (max. 4 y no afecta el poder) y quita 1 quemadura (no afecta el poder), cuesta 8 de energía, tiene', self.preci1,'% precisión')
+        print ('Ataque 2: "zarza", hace 120 de daño (si afecta el poder) y aplica 1 sangrado (no afecta el poder), cuesta 60 de energía y tiene', self.preci2,'% precisión')
         print ('Ataque 3: "pasto" encanta el pasto curando a los jugadores 0.5% de su salud máxima y en un 0.8% a los personajes de tipo natural, no cuesta energia')
-        print ('Ataque super: "naturaleza", dependiendo de las cargas de cura que tenga el objetivo cura: 0-70/1-180/2-290/3+-400 (no afecta el poder), consume las cargas de cura, cuesta 120 de energía y tiene', self.preci3,'% precisión')
+        print ('Ataque super: "naturaleza", dependiendo de las cargas de cura que tenga el objetivo a curar: 0-80/1-180/2-260/3-390/4+-500 (no afecta el poder), consume las cargas de cura, cuesta 100 de energía, tiene', self.preci3,'% precisión y tiene 2 turnos de cooldown')
         print ('Poción curativa: "cura", cura 80 de vida (afecta la mitad del poder), cura 1 hemorragia y 1 quemadura, cuesta 70 de energía y tiene', self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 80 de energía y tiene', self.precienergia,'% precisión')
         print ('Habilidad pasiva: "extra", tienes un ataque tres al que no se puede bajar la precisión')
@@ -9311,35 +10089,7 @@ class Natural ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -9350,40 +10100,10 @@ class Natural ():
                     turn = input('Turno de la druida:')
                     if turn.lower() == 'plantar':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -9396,6 +10116,9 @@ class Natural ():
                         if self.energy <= 8:
                             print (self.name, 'no tiene suficiente energia')
                             break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         unooo = randint(0, 100)
                         if unooo > self.preci1: 
                             print ('¡', self.name, 'falla la cura!')
@@ -9404,8 +10127,8 @@ class Natural ():
                         else:
                             print (self.name, 'cura 1 quemadura y aplicas una carga curativa a', enemy.name)
                             enemy.carga_cura += 1
-                            if enemy.carga_cura >= 5:
-                                enemy.carga_cura = 4
+                            if enemy.carga_cura >= 4:
+                                (enemy.name, 'está al límite de cargas de cura')
                             if enemy.carga_quemado > 0:
                                 enemy.carga_quemado -= 1
                             self.energy -= 8
@@ -9414,39 +10137,11 @@ class Natural ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'zarza':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9460,54 +10155,58 @@ class Natural ():
                         if self.energy <= 60:
                             print (self.name, 'no tiene suficiente energia')
                             break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         dooos = randint(0, 100)
                         if dooos > self.preci2: 
                             print (self.name, 'se confunde de hechizo y convierte una hoja de pasto en un gusano')
                             self.energy -= 30
                             self.energy += 4
                         else:
-                            print ('Una zarza mágica abraza a', enemy.name, 'infligiendole', 120 * self.power / enemy.defense, 'de daño y creandole un sangrado')
-                            enemy.health -= 120 * self.power / enemy.defense
-                            enemy.carga_sangrado += 1
-                            self.energy -= 60
-                            self.energy += 4
+                            if self.locura == 0:
+                                dano = 120 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print ('Una zarza mágica abraza a', enemy.name, 'infligiendole', dano_total, 'de daño y creandole un sangrado')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_sangrado += 1
+                                self.energy -= 60
+                                self.energy += 4
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, 'se vuelve loca e invoca unas dagas mágicas que la atacan y le infligen', 120 * self.power / self.defense, 'de daño y creandole un sangrado')
+                                    self.health -= 120 * self.power / self.defense
+                                    self.carga_sangrado += 1
+                                    self.energy -= 60
+                                    self.energy += 4
+                                else:
+                                    dano = 120 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print ('Una zarza mágica abraza a', enemy.name, 'infligiendole', dano_total, 'de daño y creandole un sangrado')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_sangrado += 1
+                                    self.energy -= 60
+                                    self.energy += 4
+                            else:
+                                print ('ERROR')
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'pasto':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9529,39 +10228,11 @@ class Natural ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'naturaleza':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (1, 100)
@@ -9572,66 +10243,43 @@ class Natural ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        if self.energy <= 110:
+                        if self.energy <= 100:
                             print (self.name, 'no tiene suficiente energia')
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
                             break
                         treees = randint(0, 100)
                         if treees > self.preci3: 
                             print ('¡', self.name, 'se equivoca de hechizo y invoca una serpiente bebé inofensiva!')
-                            self.energy -= 55
+                            self.energy -= 50
                             self.energy += 4
                         else:
                             if enemy.carga_cura == 0:
-                                natur = 80
+                                natur = 80 * self.lcura * self.rcura
                             elif enemy.carga_cura == 1:
-                                natur = 180
+                                natur = 180 * self.lcura * self.rcura
                             elif enemy.carga_cura == 2:
-                                natur = 260
+                                natur = 260 * self.lcura * self.rcura
                             elif enemy.carga_cura == 3:
-                                natur = 390
+                                natur = 390 * self.lcura * self.rcura
                             elif enemy.carga_cura == 4:
-                                natur = 500
+                                natur = 500 * self.lcura * self.rcura
                             print (self.name, 'invoca el poder de la naturaleza para curar', natur ,'de vida a',enemy.name)
                             enemy.health += natur
-                            self.energy -= 110
+                            enemy.carga_cura = 0
+                            self.energy -= 100
                             self.energy += 4
+                        self.cooldown3 = self.nturnos + 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'cura':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9681,39 +10329,11 @@ class Natural ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciada y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9734,20 +10354,31 @@ class Natural ():
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100)
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por',self.silenciado,'turnos')
+                            print ('Las inmovilizaciones no te afectan')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-natural = Natural ('Groa', 1600, 1600, 220, 1, 1, 37, 100, 90, 120, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1, 0, 0)
+natural = Natural ('Groa', 1600, 1600, 220, 1, 1, 37, 100, 90, 120, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Diablillo ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -9773,6 +10404,50 @@ class Diablillo ():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: Ágil')
         print('Nivel de salud:', self.health)
@@ -9780,9 +10455,9 @@ class Diablillo ():
         print ('Poder:', self.power)
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
-        print ('Ataque 1: "llamarada ignea", inflige 100 de daño (si afecta el poder) y le haces 1 quemadura (no afecta el poder), cuesta 30 de energía y tiene',self.preci1,'% precisión')
-        print ('Ataque 2: "Mordida ignea", inflige 50 de daño (si afecta el poder) y le haces 2 quemadura (no afecta el poder), cuesta 65 de energía y tiene',self.preci2,'% precisión')
-        print ('Ataque super: "Rafaga ignea",inflige 300 de daño (si afecta el poder) y le haces 3 quemadura (no afecta el poder), cuesta 280 de energía y tiene',self.preci3,'% precisión')
+        print ('Ataque 1: "llamarada ignea", inflige 100 de daño (si afecta el poder) y le haces 1 quemadura (no afecta el poder), cuesta 30 de energía, tiene', self.preci1,'% precisión y 1 turno de cooldown')
+        print ('Ataque 2: "Mordida ignea", inflige 50 de daño (si afecta el poder) y le haces 2 quemadura (no afecta el poder), cuesta 55 de energía y tiene', self.preci2,'% precisión y tiene un cooldown de 1 turno')
+        print ('Ataque super: "Rafaga ignea", inflige 300 de daño (si afecta el poder) y le haces 3 quemadura (no afecta el poder), cuesta 180 de energía, tiene', self.preci3,'% precisión y tiene un cooldown de 3 turnos')
         print ('Vendas: "venda", cura 80 de vida (no afecta el poder), cura 1 sangrado y 1 quemadura, cuesta 70 de energía y tiene',self.precicura,'% precisión')
         print ('Canalización: "energia", recupera 60 de energía y',self.precienergia,'% precisión')
         print ('Habilidad pasiva: "Corazon de fuego", se cura 15 de vida y energia (no afecta el poder) al aplicar 1 quemadura (no afecta el poder)')
@@ -9810,35 +10485,7 @@ class Diablillo ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -9849,40 +10496,12 @@ class Diablillo ():
                     turn = input('Turno del diablillo:')
                     if turn.lower() == 'llamarada ignea':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -9901,50 +10520,60 @@ class Diablillo ():
                             self.energy -= 15
                             self.energy += 3
                         else:
-                            print ('Quemas a', enemy.name, 'le aplicas 1 quemaduras y le hace', 100 * self.power / enemy.defense, 'de daño')
-                            enemy.health -= 100 * self.power / enemy.defense
-                            enemy.carga_quemado += 1
-                            self.health += 15
-                            self.energy += 15
-                            self.energy -= 30
-                            self.energy += 3
+                            if self.locura == 0:
+                                dano = 100 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (self.name, 'quema a', enemy.name, 'aplicandole 1 quemadura y haciendole', dano_total, 'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_quemado += 1
+                                self.health += 15 * self.lcura * self.rcura
+                                self.energy += 15
+                                self.energy -= 30
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, ' se vuelve loco y se quema a si mismo aplicandose 1 quemadura y haciendose', 100 * self.power / self.defense, 'de daño')
+                                    self.health -= 100 * self.power / self.defense
+                                    self.carga_quemado += 1
+                                    self.health += 15 * self.lcura * self.rcura
+                                    self.energy += 15
+                                    self.energy -= 30
+                                    self.energy += 3
+                                else:
+                                    dano = 100 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'quema a', enemy.name, 'aplicandole 1 quemadura y haciendole', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_quemado += 1
+                                    self.health += 15 * self.lcura * self.rcura
+                                    self.energy += 15
+                                    self.energy -= 30
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+                        self.cooldown1 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'mordida ignea':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede hacer nada')
+                            self.silenciado -= 1
+                            break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -9955,60 +10584,72 @@ class Diablillo ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        if self.energy <= 65:
+                        if self.energy <= 55:
                             print (self.name, 'no tiene suficiente energia')
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
                             break
                         doooos = randint(0, 100)
                         if doooos > self.preci2: 
                             print (enemy.name, 'se aparta y no le alcanzas')
-                            self.energy -= 32.5
+                            self.energy -= 26.5
                             self.energy += 3
                         else:
-                            print (uno.name, 'se abalanza sobre', enemy.name, ', echando fuego por la boca lo muerdes haciendole 2 quemaduras y', 50 * self.power / enemy.defense, 'de daño')
-                            enemy.health -= 50 * self.power / enemy.defense
-                            enemy.carga_quemado += 2
-                            self.health += 30
-                            self.energy += 30
-                            self.energy -= 65
-                            self.energy += 3
+                            if self.locura == 0:
+                                dano = 50 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (uno.name, 'se abalanza sobre', enemy.name, ', echando fuego por la boca lo muerdes haciendole 2 quemaduras y', dano_total, 'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_quemado += 2
+                                self.health += 30 * self.lcura * self.rcura
+                                self.energy += 30
+                                self.energy -= 55
+                                self.cooldown2 += self.nturnos + 2
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (uno.name, 'se vuelve loco y echando fuego por la boca se muerde haciendose 2 quemaduras y', 50 * self.power / self.defense, 'de daño')
+                                    self.health -= 50 * self.power / self.defense
+                                    self.carga_quemado += 2
+                                    self.health += 30 * self.lcura * self.rcura
+                                    self.energy += 30
+                                    self.energy -= 55
+                                    self.energy += 3
+                                else:
+                                    dano = 50 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (uno.name, 'se abalanza sobre', enemy.name, ', echando fuego por la boca lo muerdes haciendole 2 quemaduras y', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_quemado += 2
+                                    self.health += 30 * self.lcura * self.rcura
+                                    self.energy += 30
+                                    self.energy -= 55
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+                        self.cooldown2 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'rafaga ignea':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede atacar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -10018,60 +10659,71 @@ class Diablillo ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        if self.energy <= 210:
+                        if self.energy <= 180:
                             print (uno.name, 'no tiene suficiente energia')
+                            break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
                             break
                         treeees = randint(0, 100)
                         if treeees > self.preci3: 
                             print (self.name, 'falla el golpe!')
-                            self.energy -= 140
+                            self.energy -= 90
                             self.energy += 3
                         else:
-                            print (self.name, 'lanza una ráfaga de bolas ígneas aplicando 3 quemaduras a', enemy.name, 'e infligiendole', 300 * self.power / enemy.defense,'de daño')
-                            enemy.health -= 300 * self.power / enemy.defense
-                            enemy.carga_quemado += 3
-                            self.health += 45
-                            self.energy += 45
-                            self.energy -= 280
-                            self.energy += 3
+                            if self.locura == 0:
+                                dano = 300 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (self.name, 'lanza una ráfaga de bolas ígneas aplicando 3 quemaduras a', enemy.name, 'e infligiendole', dano_total,'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_quemado += 3
+                                self.health += 45 * self.lcura * self.rcura
+                                self.energy += 45
+                                self.energy -= 180
+                                self.energy += 3
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (self.name, 'se vuelve loco y lanza una ráfaga de bolas ígneas a si mismo aplicandose 3 quemaduras e infligiendose', 300 * self.power / self.defense,'de daño')
+                                    self.health -= 300 * self.power / self.defense
+                                    self.carga_quemado += 3
+                                    self.health += 45 * self.lcura * self.rcura
+                                    self.energy += 45
+                                    self.energy -= 180
+                                    self.energy += 3
+                                else:
+                                    dano = 300 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'lanza una ráfaga de bolas ígneas aplicando 3 quemaduras a', enemy.name, 'e infligiendole', dano_total,'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_quemado += 3
+                                    self.health += 45 * self.lcura * self.rcura
+                                    self.energy += 45
+                                    self.energy -= 180
+                                    self.energy += 3
+                            else:
+                                print ('ERROR')
+                        self.cooldown3 = self.nturnos + 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -10088,7 +10740,7 @@ class Diablillo ():
                         if curaaaaa > self.precicura: 
                             print ('¡falla la venda!')
                             self.energy -= 35
-                            self.energy += 4
+                            self.energy += 3
                         else:
                             if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
@@ -10098,7 +10750,7 @@ class Diablillo ():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                self.energy += 2
+                                self.energy += 3
                             elif self.health >= self.maxhealth:
                                 print ('Ya supera la vida máxima, por lo tanto no se cura')
                                 if self.carga_sangrado > 0:
@@ -10106,7 +10758,7 @@ class Diablillo ():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                self.energy += 2
+                                self.energy += 3
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
                                 self.health += 80 * (self.power/2)
@@ -10115,45 +10767,19 @@ class Diablillo ():
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
                                 self.energy -= 70
-                                self.energy += 2
+                                self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -10166,31 +10792,39 @@ class Diablillo ():
                         energiaaaa = randint(0, 100)
                         if energiaaaa > self.precienergia: 
                             print (self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         else:
                             print (self.name, 'canaliza y recupera', 60 * self.power, 'de energía')
                             self.energy += 60 * self.power
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 3
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad rafaga ignea se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100)
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado,'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-diablillo = Diablillo('Gillmore', 2000, 2000, 145, 1, 1, 75, 100, 90, 90, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0)
+diablillo = Diablillo('Gillmore', 2000, 2000, 145, 1, 1, 75, 100, 90, 90, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Support ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, cargado, cargadocooldown, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, cargado, cargadocooldown, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -10218,6 +10852,50 @@ class Support ():
         self.cargado = cargado
         self.cargadocooldown = cargadocooldown
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: mago')
         print ('Nivel de salud:', self.health)
@@ -10226,9 +10904,9 @@ class Support ():
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
         print ('Ataque 1: "escudo", aumenta la vida en 10 y la defensa en 0.05, cuesta 12 de energía, tiene',self.preci1,'% precisión')
-        print ('Ataque 2: "agilizar", aumenta la velocidad en 8, cuesta 50 de energía y tiene', self.preci2 ,'% precisión')
+        print ('Ataque 2: "agilizar", aumenta la velocidad en 8, cuesta 30 de energía y tiene', self.preci2 ,'% precisión, y 1 turno de cooldown')
         print ('Ataque 3: "purificador" carga el aire de un hechizo que quita todas las cargas de todos los personajes (en cada turno), no cuesta energia')
-        print ('Ataque super: "sobrecargar", aumenta el poder de tu objetivo en 3 después de 3 turnos esa potenciación se quita y con ella 300 de vida, además tiene un 15% de probabilidades de quitarse 200 de vida extra, cuesta 20 de energía, tiene ', self.preci3 ,'% precisión y un cooldown de tres turnos')
+        print ('Ataque super: "sobrecargar", aumenta el poder de tu objetivo en 3 después de 3 turnos esa potenciación se quita y con ella 300 de vida, además tiene un 15% de probabilidades de quitarse 200 de vida extra, cuesta 20 de energía, tiene ', self.preci3 ,'% precisión y un cooldown de 3 turnos')
         print ('Poción curativa: "cura", cura 80 de vida (afecta la mitad del poder), cura 1 hemorragia y 1 quemadura, cuesta 70 de energía y tiene', self.precicura ,'% precisión')
         print ('Canalización: "energia", recupera 80 de energía y tiene', self.precienergia ,'% precisión')
         print ('Habilidad pasiva: "maleta", tienes dos habilidades pasivas extras')
@@ -10239,18 +10917,6 @@ class Support ():
         print ('NUEVO HÉROE. Es ¡', self.name, '!', '\n')
         self.print_info()
     def turno(self, enemy):
-        if self.cargadocooldown > 0:
-            self.cargadocooldown -= 1
-            if self.cargadocooldown == 0:
-                print ('A', self.cargado.name, 'se le acaba el poder de la sobrecarga')
-                self.cargado.power -= 3
-                sobrecargaaaa = randint (1, 100)
-                if sobrecargaaaa <= 15:
-                    self.cargado.health -= 800
-                    print (self.cargado.name, 'se quita 800 de vida debido a la repentina bajada de poder', '\n')
-                else:
-                    self.cargado.health -= 500
-                    print (self.cargado.name, 'se quita 500 de vida debido a la repentina bajada de poder', '\n')
         for suporttt in range (1):
             if self.health <= 0:
                 break
@@ -10270,35 +10936,7 @@ class Support ():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -10309,40 +10947,10 @@ class Support ():
                     turn = input('Turno del mago ayudante:')
                     if turn.lower() == 'escudo':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
-                            break
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -10354,6 +10962,9 @@ class Support ():
                                 self.carga_paralizado -= 1
                         if self.energy <= 10:
                             print (self.name, 'no tiene suficiente energia')
+                            break
+                        if self.cooldown1 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
                             break
                         unooo = randint(0, 100)
                         if unooo > self.preci1: 
@@ -10370,39 +10981,11 @@ class Support ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'agilizar':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -10413,52 +10996,28 @@ class Support ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        if self.energy <= 50:
+                        if self.energy <= 30:
                             print (self.name, 'no tiene suficiente energia')
+                            break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
                             break
                         dooos = randint(0, 100)
                         if dooos > self.preci2: 
                             print (self.name, 'se confunde de hechizo y convierte uno de sus calcetines en un gorrión')
-                            self.energy -= 25
+                            self.energy -= 15
                             self.energy += 4
                         else:
                             print ('Aumentas la velocidad de', enemy.name, 'en', 8 * self.power)
-                            enemy.velocity += 120 * self.power
-                            self.energy -= 50
+                            enemy.velocity += 8 * self.power
+                            self.energy -= 30
                             self.energy += 4
+                        self.cooldown2 = self.nturnos +  2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'purificador':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
                         if self.carga_stun > 0:
                             print (self.name, 'está stuneado y no puede hacer nada')
@@ -10484,39 +11043,11 @@ class Support ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'sobrecargar':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede lanzar este hechizo')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (1, 100)
@@ -10527,15 +11058,15 @@ class Support ():
                             else:
                                 print (self.name, 'no se paraliza')
                                 self.carga_paralizado -= 1
-                        if self.cargadocooldown > 0:
-                            print ('La habilidad aún está en cooldown')
-                            break
                         if self.energy <= 20:
                             print (self.name, 'no tiene suficiente energia')
                             break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treees = randint(0, 100)
                         if treees > self.preci3: 
-                            print ('¡', self.name, 'se equivoca de hechizo y convierte su calzoncillo en una manzana!')
+                            print ('¡', self.name, 'se equivoca de hechizo y convierte su bota en una manzana!')
                             self.energy -= 10
                             self.energy += 4
                         else:
@@ -10543,7 +11074,7 @@ class Support ():
                             if self.cargado == support:
                                 print ('Te cargas durante 3 turnos para aumentar tu poder en 3')
                                 self.power += 3
-                                self.cargadocooldown += 2
+                                self.cooldown3 += self.nturnos + 4
                                 self.energy -= 20
                                 self.energy += 4
                                 print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
@@ -10551,46 +11082,18 @@ class Support ():
                                 break
                             print ('Cargas a', enemy.name, 'durante 3 turnos para aumentar su poder en 3')
                             enemy.power += 3
-                            self.cargadocooldown += 3
                             self.energy -= 20
                             self.energy += 4
+                        self.cooldown3 = self.nturnos + 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'cura':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -10640,36 +11143,11 @@ class Support ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'curar':
                         #cargas
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -10702,39 +11180,11 @@ class Support ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -10757,39 +11207,11 @@ class Support ():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energiar':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -10814,20 +11236,44 @@ class Support ():
                             self.energy += 4
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
-                        self.turno(enemy)
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La habilidad sobrecargar se puede volver a lanzar en el turno', self.cooldown3)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100)
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('(Las inmovilizaciones no te afectan)')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
+                        self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-support = Support ('Wymond', 1780, 1780, 180, 1, 1, 36, 120, 120, 200, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1, 0, '', 0, 0)
+                    if self.cargadocooldown > 0:
+                        self.cargadocooldown -= 1
+                        if self.cargadocooldown == 0:
+                            print ('A', self.cargado.name, 'se le acaba el poder de la sobrecarga')
+                            self.cargado.power -= 3
+                            sobrecargaaaa = randint (1, 100)
+                            if sobrecargaaaa <= 15:
+                                self.cargado.health -= 800
+                                print (self.cargado.name, 'se quita 800 de vida debido a la repentina bajada de poder')
+                            else:
+                                self.cargado.health -= 500
+                                print (self.cargado.name, 'se quita 500 de vida debido a la repentina bajada de poder')
+support = Support ('Wymond', 1780, 1780, 180, 1, 1, 36, 120, 120, 200, 100, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1, 0, '', 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Chiquitin():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, ko, lcura, rcura, sangre, mutado, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3): 
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -10853,6 +11299,50 @@ class Chiquitin():
         self.mundo = mundo
         self.nturnos = nturnos
         self.ko = ko
+        self.lcura = lcura
+        self.rcura = rcura
+        self.sangre = sangre
+        self.mutado = mutado
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def print_info(self):
         print ('Tipo: misterioso')
         print('Nivel de salud:', self.health)
@@ -10860,9 +11350,9 @@ class Chiquitin():
         print ('Poder:', self.power)
         print ('Defensa:', self.defense)
         print ('Velocidad:', self.velocity)
-        print ('Ataque 1: "bocajarro", inflige 5 de daño entre 10 a 50 veces, cuesta 2 de energía, tiene', self.preci1 ,'% precisión y tiene 20% de probabilidades de infligir un sangrado en tu enemigo')
-        print ('Ataque 2: "mordida ignea", inflige 50 de daño (si afecta el poder) y le haces 2 quemadura (no afecta el poder), cuesta 8 de energía y tiene', self.preci2 ,'% precisión')
-        print ('Ataque super: "Ira", aumenta tu poder en 1 (no afecta el poder), cuesta 10 de energía y tiene ', self.preci3 ,'% precisión')
+        print ('Ataque 1: "bocajarro", inflige 5 de daño entre 10 a 50 veces, cuesta 2 de energía, tiene', self.preci1 ,'% precisión, 1 turno de cooldown y tiene 20% de probabilidades de infligir un sangrado en tu enemigo')
+        print ('Ataque 2: "mordida ignea", inflige 50 de daño (si afecta el poder) y le haces 2 quemadura (no afecta el poder), cuesta 8 de energía, tiene 1 turno de cooldown y un', self.preci2 ,'% precisión')
+        print ('Ataque super: "Ira", aumenta tu poder en 1 (no afecta el poder), cuesta 10 de energía, tiene ', self.preci3 ,'% precisión y 1 turno de cooldown')
         print ('Vendas: "venda", cura 80 de vida (no afecta el poder), cura 1 sangrado y 1 quemadura, cuesta 5 de energía y tiene ', self.precicura ,'% precisión')
         print ('Canalización: "energia", recupera 4 de energía y ', self.precienergia ,'% precisión')
         print ('Habilidad pasiva: "regenerativo", al principio de tu turno recuperas toda tu vida')
@@ -10890,35 +11380,7 @@ class Chiquitin():
                     break
                 if self.carga_stun > 0:
                     #cargas
-                    if self.carga_veneno >= 10:
-                        print (self.name, 'está tan lleno de veneno que acaba por morir')
-                        self.health = -1
-                    if self.carga_sangrado >= 3:
-                        print ('Tanto sangrado provoca una hemorragia en', self.name)
-                        self.carga_hemorragia += 1
-                        self.carga_sangrado -= 3
-                    if self.carga_veneno >= 1:
-                        print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                        self.health -= 5 * self.carga_veneno
-                    if self.carga_quemado >= 1:
-                        print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                        self.health -= 46 * self.carga_quemado
-                    if self.carga_sangrado >= 1:
-                        print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                        self.health -= 20 * self.carga_sangrado
-                    if self.carga_hemorragia >= 1:
-                        print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                        self.health -= 80 * self.carga_hemorragia
-                    if self.carga_maldita >= 1:
-                        print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-                        self.health -= 32 * self.carga_maldita
-                    if self.health <= 0:
-                        print ('Moriste')
-                        break
-                    else:
-                        if self.carga_cura >= 1:
-                            print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                            self.health += 28 * self.carga_cura
+                    cargas(self)
                     #el turno
                     self.carga_stun -= 1
                     print (self.name, 'está stuneado y no puede hacer nada, turnos restantes:', self.carga_stun)
@@ -10931,39 +11393,13 @@ class Chiquitin():
                     turn = input('Turno del chiquitín:')
                     if turn.lower() == 'bocajarro':
                         #cargas
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            self.silenciado -= 1
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
                             break
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
@@ -10983,53 +11419,68 @@ class Chiquitin():
                             self.energy -= 1
                             self.energy += 2
                         else:
-                            bocajarro = randint (10, 50)
-                            print (self.name, 'le da un bocajarro de', bocajarro, 'golpes a', enemy.name, ', le inflige', (5 * self.power / enemy.defense) * bocajarro, 'de daño')
-                            enemy.health -= (5 * self.power / enemy.defense) * bocajarro
-                            punetazooo = randint (1, 100)
-                            if punetazooo <= 20:
-                                enemy.carga_sangrado += 1
-                                print ('Tras un fuerte puñetazo un sangrado surge en', enemy.name)
-                            self.energy -= 2
-                            self.energy += 2
+                            if self.locura == 0:
+                                bocajarro = randint (10, 50)
+                                dano = (5 * self.power / enemy.defense) * bocajarro
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (self.name, 'le da un bocajarro de', bocajarro, 'golpes a', enemy.name, ', le inflige', dano_total ,'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                punetazooo = randint (1, 100)
+                                if punetazooo <= 20:
+                                    enemy.carga_sangrado += 1
+                                    print ('Tras un fuerte puñetazo un sangrado surge en', enemy.name)
+                                self.energy -= 2
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    bocajarro = randint (10, 50)
+                                    print (self.name, 'se vuelve loco y se da un bocajarro de', bocajarro, 'golpes a si mismo, se inflige', (5 * self.power / self.defense) * bocajarro, 'de daño')
+                                    self.health -= (5 * self.power / self.defense) * bocajarro
+                                    punetazooo = randint (1, 100)
+                                    if punetazooo <= 20:
+                                        self.carga_sangrado += 1
+                                        print ('Tras un fuerte puñetazo un sangrado surge en', self.name)
+                                    self.energy -= 2
+                                    self.energy += 2
+                                else:
+                                    bocajarro = randint (10, 50)
+                                    dano = (5 * self.power / enemy.defense) * bocajarro
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (self.name, 'le da un bocajarro de', bocajarro, 'golpes a', enemy.name, ', le inflige', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    punetazooo = randint (1, 100)
+                                    if punetazooo <= 20:
+                                        enemy.carga_sangrado += 1
+                                        print ('Tras un fuerte puñetazo un sangrado surge en', enemy.name)
+                                    self.energy -= 2
+                                    self.energy += 2
+                            else:
+                                print ('ERROR')
+                        self.cooldown1 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'mordida ignea':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede atacar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            print (self.name, 'está inmovilizado y no puede moverse y por lo tanto no puede atacar')
+                            self.inmovilizado -= 1
+                            break
+                        
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -11042,55 +11493,62 @@ class Chiquitin():
                         if self.energy <= 8:
                             print (self.name, 'no tiene suficiente energia')
                             break
+                        if self.cooldown2 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         doooos = randint(0, 100)
                         if doooos > self.preci2: 
                             print (enemy.name, 'se aparta y no le alcanzas')
                             self.energy -= 4
                             self.energy += 2
                         else:
-                            print (uno.name, 'se abalanza sobre', enemy.name, ', echando fuego por la boca lo muerdes haciendole 2 quemaduras y', 50 * self.power / enemy.defense, 'de daño')
-                            enemy.health -= 50 * self.power / enemy.defense
-                            enemy.carga_quemado += 2
-                            self.energy -= 8
-                            self.energy += 2
+                            if self.locura == 0:
+                                dano = 50 * self.power / enemy.defense
+                                reflejo = dano * enemy.reflejar 
+                                dano_total = dano - reflejo
+                                enemy.health -= dano_total
+                                self.health -= reflejo
+                                print (uno.name, 'se abalanza sobre', enemy.name, ', echando fuego por la boca lo muerdes haciendole 2 quemaduras y', dano_total, 'de daño')
+                                if enemy.reflejar > 0:
+                                    print (enemy.name, 'refleja', reflejo, 'de daño')
+                                enemy.carga_quemado += 2
+                                self.energy -= 8
+                                self.energy += 2
+                            elif self.locura > 0 and self.locura <= 100:
+                                locuraaa = randint (1, 100)
+                                if locuraaa > self.locura:
+                                    print (uno.name, 'se vuelve loco y echando fuego por la boca se muerde haciendose 2 quemaduras y', 50 * self.power / self.defense, 'de daño')
+                                    self.health -= 50 * self.power / self.defense
+                                    self.carga_quemado += 2
+                                    self.energy -= 8
+                                    self.energy += 2
+                                else:
+                                    dano = 50 * self.power / enemy.defense
+                                    reflejo = dano * enemy.reflejar 
+                                    dano_total = dano - reflejo
+                                    enemy.health -= dano_total
+                                    self.health -= reflejo
+                                    print (uno.name, 'se abalanza sobre', enemy.name, ', echando fuego por la boca lo muerdes haciendole 2 quemaduras y', dano_total, 'de daño')
+                                    if enemy.reflejar > 0:
+                                        print (enemy.name, 'refleja', reflejo, 'de daño')
+                                    enemy.carga_quemado += 2
+                                    self.energy -= 8
+                                    self.energy += 2
+                            else:
+                                print ('ERROR')
+                        self.cooldown2 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'ira':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede enfurecerse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -11103,6 +11561,9 @@ class Chiquitin():
                         if self.energy <= 10:
                             print (self.name, 'no tiene suficiente energia', '\n')
                             break
+                        if self.cooldown3 > self.nturnos:
+                            print ('Esta habilidad aún está en cooldawn')
+                            break
                         treeees = randint(0, 100)
                         if treeees > self.preci3: 
                             print ('Fallas!')
@@ -11113,44 +11574,19 @@ class Chiquitin():
                             self.power += 1
                             self.energy -= 10
                             self.energy += 2
+                        self.cooldown3 = self.nturnos + 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'venda':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede curarse')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -11184,7 +11620,6 @@ class Chiquitin():
                                     self.carga_sangrado -= 1
                                 if self.carga_quemado > 0:
                                     self.carga_quemado -= 1
-                                self.energy -= 0
                                 self.energy += 2
                             else:
                                 print ('Te pones una venda que te cura', 80 * (self.power/2) ,'de vida')
@@ -11199,40 +11634,14 @@ class Chiquitin():
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
                     elif turn.lower() == 'energia':
                         #cargas
-                        if self.carga_veneno >= 10:
-                            print (self.name, 'está tan lleno de veneno que acaba por morir')
-                            self.health = -1
-                        if self.carga_sangrado >= 3:
-                            print ('Tanto sangrado provoca una hemorragia en', self.name)
-                            self.carga_hemorragia += 1
-                            self.carga_sangrado -= 3
-                        if self.carga_veneno >= 1:
-                            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-                            self.health -= 5 * self.carga_veneno
-                        if self.carga_quemado >= 1:
-                            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-                            self.health -= 46 * self.carga_quemado
-                        if self.carga_sangrado >= 1:
-                            print ('El sangrado inflige', 20 * self.carga_sangrado, 'a', self.name)
-                            self.health -= 20 * self.carga_sangrado
-                        if self.carga_hemorragia >= 1:
-                            print ('La hemorragia inflige', 80 * self.carga_hemorragia, 'a', self.name)
-                            self.health -= 80 * self.carga_hemorragia
-                        if self.carga_maldita >= 1:
-                            print ('La maldición inflige', 42 * self.carga_maldita, 'a', self.name)
-                            self.health -= 42 * self.carga_maldita
-                        if self.health <= 0:
-                            print ('Moriste')
-                            break
-                        else:
-                            if self.carga_cura >= 1:
-                                print ('Tus cargas te curan', 28 * self.carga_cura, 'puntos de vida')
-                                self.health += 28 * self.carga_cura
+                        cargas(self)
                         #el turno
-                        if self.carga_stun > 0:
-                            print (self.name, 'está stuneado y no puede hacer nada')
-                            self.carga_stun -= 1
+                        if self.silenciado > 0:
+                            print (self.name, 'está silenciado y no puede canalizar')
+                            self.silenciado -= 1
                             break
+                        elif self.inmovilizado > 0:
+                            self.inmovilizado -= 1
                         elif self.carga_paralizado > 0:
                             paraliza = randint (0, 100)
                             if paraliza <= 40:
@@ -11245,31 +11654,38 @@ class Chiquitin():
                         energiaaaa = randint(0, 100)
                         if energiaaaa > self.precienergia: 
                             print (self.name, 'falla la canalización!')
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         else:
                             print (self.name, 'canaliza y recupera', 4 * self.power, 'de energía')
                             self.energy += 4
-                            if self.energy < 0:
-                                self.health -= 800
                             self.energy += 2
                         print ('A', enemy.name, 'le quedan', enemy.health, 'puntos de vida,', enemy.energy, 'puntos de energia, su poder es de', enemy.power, ', su defensa es de', enemy.defense,'y su velocidad de', enemy.velocity,',y tiene', enemy.carga_hemorragia, 'hemorragias,', enemy.carga_sangrado, 'sangrados,', enemy.carga_quemado, 'quemaduras,', enemy.carga_cura, 'cargas de cura,', enemy.carga_veneno, 'cargas de veneno', enemy.carga_maldita, 'cargas malditas y está', enemy.carga_hielo + enemy.carga_stun + enemy.carga_paralizado, 'turnos congelados/stuneados/paralizados')
                         print ('Tienes', self.health, 'puntos de vida, tu poder es de', self.power, ', tu defensa es de', self.defense,'y tu velocidad de', self.velocity, ', te quedan', self.energy, 'puntos de energía, tienes', self.carga_hemorragia, 'hemorragias,', self.carga_sangrado, 'sangrados,', self.carga_quemado, 'quemaduras,', self.carga_cura,'cargas de cura,', self.carga_veneno, 'cargas de veneno y', self.carga_maldita, 'cargas malditas y estás', self.carga_hielo + self.carga_stun + self.carga_paralizado, 'turnos congelados/stuneados/paralizados', '\n')
-                    elif turn.lower() == 'precisión' or turn.lower() == 'precision':
-                        print ('La precisión del ataque uno es de: ', self.preci1, '%')
-                        print ('La precisión del ataque dos es de: ', self.preci1, '%')
-                        print ('La precisión del ataque tres es de: ', self.preci3, '%')
-                        print ('La precisión de la cura es de: ', self.precicura, '%')
-                        print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                    elif turn.lower() == 'stats':
+                        if self.silenciado > 0:
+                            print ('Estás silenciado')
+                        else:
+                            print ('Estás en el turno', self.nturnos)
+                            print ('La precisión del ataque uno es de: ', self.preci1, '%')
+                            print ('La precisión del ataque dos es de: ', self.preci1, '%')
+                            print ('La precisión del ataque tres es de: ', self.preci3, '%')
+                            print ('La precisión de la cura es de: ', self.precicura, '%')
+                            print ('La precisión de la canalización uno es de: ', self.precienergia, '%')
+                            print ('El lanzamiento de curación es de:', self.lcura * 100 ,'%')
+                            print ('La cura recibida es de:', self.rcura * 100, '%')
+                            #print ('La cantidad de sangre es de', self.sangre,'/100)
+                            print ('La locura es del:', self.locura,'%')
+                            print ('Estás silenciado por', self.silenciado,'turnos')
+                            print ('Estás inmovilizado por', self.inmovilizado, 'turnos')
+                            print ('Reflejas un', self.reflejar,'% del daño recibido')
                         self.turno (enemy)
                     else:
                         print ('Mal', '\n')
                         self.turno (enemy)
-chiquitin = Chiquitin('$)¬"#@', 400, 400, 10, 1, 1, 32, 120, 90, 75, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+chiquitin = Chiquitin('$)¬"#@', 400, 400, 10, 1, 1, 32, 120, 90, 75, 80, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 100, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class BoxBlue ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, lcura, rcura, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -11294,31 +11710,59 @@ class BoxBlue ():
         self.tipo = tipo
         self.mundo = mundo
         self.nturnos = nturnos
+        self.lcura = lcura
+        self.rcura = rcura
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def turno (self):
         boxblue.nturnos += 1
         if self.carga_hielo > 0:
             print ('La caja está congelada y no es afectada por efectos de daño continuo')
             self.carga_hielo -= 1
-        if self.carga_veneno >= 10:
-            print (self.name, 'está tan lleno de veneno que acaba por morir')
-            self.health = -1
-        if self.carga_veneno >= 1:
-            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-            self.health -= 5 * self.carga_veneno
-        if self.carga_quemado >= 1:
-            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-            self.health -= 46 * self.carga_quemado
-        if self.carga_sangrado >= 1:
-            print ('Es una caja, no tiene sangre')
-        if self.carga_hemorragia >= 1:
-            print ('Es una caja, no tiene sangre')
-        if self.carga_maldita >= 1:
-            print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-            self.health -= 32 * self.carga_maldita
-boxblue = BoxBlue ('Caja Azul', 2000, 2000, 1000000, 1, 5, 0, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0)
+        else:
+            cargas(self)
+boxblue = BoxBlue ('Caja Azul', 2000, 2000, 1000000, 1, 5, 0, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class BoxRed ():
-    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos):
+    def __init__(self, name, maxhealth, health, energy, power, defense, velocity, preci1, preci2, preci3, precicura, precienergia, carga_veneno, carga_quemado, carga_sangrado, carga_hemorragia, carga_maldita, carga_hielo, carga_stun, carga_paralizado, carga_cura, tipo, mundo, nturnos, lcura, rcura, efectod1, efectodn1, tiempod1, efectod2, efectodn2, tiempod2, efectod3, efectodn3, tiempod3, efectod4, efectodn4, tiempod4, efectod5, efectodn5, tiempod5, efecto1, efecton1, tiempo1, efecto2, efecton2, tiempo2, efecto3, efecton3, tiempo3, efecto4, efecton4, tiempo4, efecto5, efecton5, tiempo5, locura, silenciado, inmovilizado, corrupcion, reflejar, dormido, focus, cooldown1, cooldown2, cooldown3):
         self.name = name
         self.maxhealth = maxhealth
         self.health = health #número
@@ -11343,44 +11787,78 @@ class BoxRed ():
         self.tipo = tipo
         self.mundo = mundo
         self.nturnos = nturnos
+        self.lcura = lcura
+        self.rcura = rcura
+        self.efectod1 = efectod1 #efecto (duradero)(duradero quiere decir que el efecto termina cuando el tiempo se agota)
+        self.efectodn1 = efectodn1 #efecto (duradero numero)
+        self.tiempod1 = tiempod1 #tiempo (duradero)
+        self.efectod2 = efectod2
+        self.efectodn2 = efectodn2
+        self.tiempod2 = tiempod2
+        self.efectod3 = efectod3
+        self.efectodn3 = efectodn3
+        self.tiempod3 = tiempod3
+        self.efectod4 = efectod4
+        self.efectodn4 = efectodn4
+        self.tiempod4 = tiempod4
+        self.efectod5 = efectod5
+        self.efectodn5 = efectodn5
+        self.tiempod5 = tiempod5
+        self.efecto1 = efecto1 #efecto que se aplica cada turno, el último será el que marque la variable de tiempo
+        self.efecton1 = efecton1 #efecto (numero)
+        self.tiempo1 = tiempo1
+        self.efecto2 = efecto2 
+        self.efecton2 = efecton2 
+        self.tiempo2 = tiempo2
+        self.efecto3 = efecto3
+        self.efecton3 = efecton3 
+        self.tiempo3 = tiempo3
+        self.efecto4 = efecto4
+        self.efecton4 = efecton4 
+        self.tiempo4 = tiempo4
+        self.efecto5 = efecto5 
+        self.efecton5 = efecton5 
+        self.tiempo5 = tiempo5
+        self.locura = locura #%
+        self.silenciado = silenciado #solo poder usar ataque 1
+        self.inmovilizado = inmovilizado
+        self.corrupcion = corrupcion #solo 0 y 1
+        self.reflejar = reflejar
+        self.dormido = dormido
+        self.focus = focus #cadena
+        self.cooldown1 = cooldown1
+        self.cooldown2 = cooldown2
+        self.cooldown3 = cooldown3
     def turno (self):
         boxred.nturnos += 1
         if self.carga_hielo > 0:
             print ('La caja está congelada y no es afectada por efectos de daño continuo')
             self.carga_hielo -= 1
-        if self.carga_veneno >= 10:
-            print (self.name, 'está tan lleno de veneno que acaba por morir')
-            self.health = -1
-        if self.carga_veneno >= 1:
-            print ('El veneno inflige', 5 * self.carga_veneno, 'a', self.name)
-            self.health -= 5 * self.carga_veneno
-        if self.carga_quemado >= 1:
-            print ('La quemadura inflige', 46 * self.carga_quemado, 'a', self.name)
-            self.health -= 46 * self.carga_quemado
-        if self.carga_sangrado >= 1:
-            print ('Es una caja, no tiene sangre')
-        if self.carga_hemorragia >= 1:
-            print ('Es una caja, no tiene sangre')
-        if self.carga_maldita >= 1:
-            print ('La maldición inflige', 32 * self.carga_maldita, 'a', self.name)
-            self.health -= 32 * self.carga_maldita
-boxred = BoxRed ('Caja Roja', 2000, 2000, 1000000, 1, 5, 0, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0)
+        else:
+            cargas(self)
+boxred = BoxRed ('Caja Roja', 2000, 2000, 1000000, 1, 5, 0, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, '', -1, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0)
 
 class Campo():
-    def __init__ (self, lluvia, hierba, sol, nevar, purificador):
+    def __init__ (self, lluvia, hierba, sol, nevar, purificador, trrr):
         self.lluvia = lluvia
         self.hierba = hierba
         self.sol = sol
         self.nevar = nevar
         self.purificador = purificador
-campo = Campo(0, 0, 0, 0, 0)
+        self.trrr = trrr
+campo = Campo(0, 0, 0, 0, 0, 0)
 
 #partidas
 
-cuantosplayers = input ('¿Cuantos jugadores? Mínimo 2 y máximo 4')
+cuantosplayers = input ('Introdusca un numero del 2-4 para jugar una partida a muerte de ese mismo numero de jugadores o introduzca "atraco" para jugar un 3vs3 a destruir la caja enemiga')
 if cuantosplayers == '2':
     uno = input('Jugador 1, escoja su personaje: Warrior, Magician, Hereje, Maldi, Thief, Shapeshifter, Mace, Fires, Snake Charner, Apostador, Natural, Diablillo, Chiquitin')
-    dos = input('Jugador 2, escoja su personaje: (No repetir)')
+    while True:
+        dos = input('Jugador 2, escoja su personaje: (No repetir)')
+        if dos == uno:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
     if uno.lower() == 'warrior':
         uno = guerrero
     elif uno.lower() == 'magician':
@@ -11433,27 +11911,6 @@ if cuantosplayers == '2':
         dos = diablillo
     elif dos.lower() == 'chiquitin':
         dos = chiquitin
-    name1 = input ('¿El jugador 1 ya está registrado? si o no')
-    if name1 == 'si' or name1 == 'sí':
-        name1what = input ('¿Cual es el nombre del usuario?')
-        names1 = videojuegoforDB.search(name1what)
-        if names1 != []:
-            nombre1 = name1what
-        elif names1 == []:
-            print ('Ese usuario no está registrado')
-    elif name1 == 'no':
-        name1what = input ('¿Cual es el nombre del nuevo usuario?')
-        busqueda = videojuegoforDB.search(name1what)
-        print (busqueda)
-        while True:
-            if busqueda == null:
-                nombre1 = name1what
-                videojuegoforDB.newuser(name1what, 0, 0)
-                print ('Registrado correctamente')
-                break
-            elif busqueda != null:
-                print ('Ese nombre ya está en uso')
-                name1what = input('Escribe otro nombre:')
     escenario = randint (1, 11)
     if escenario == 1 or escenario == 2 or escenario == 3:
         print ('La pelea se desarrolla en una bella pradera (no pasa nada)')
@@ -11507,6 +11964,10 @@ if cuantosplayers == '2':
         dos.preci3 -= 20
         dos.precicura -= 20
         dos.precienergia -= 20
+    elif escenario == 12:
+        print ('Una infinita fuente de energia abastece a todos los personajes con 100k de energia')
+        uno.energy += 100000
+        dos.energy += 100000
     elif escenario == 10:
         for escenario10_2 in range (1):
             print ('La pelea está patas arriba y los menos veloces atacan primero')
@@ -11547,8 +12008,18 @@ if cuantosplayers == '2':
 
 elif cuantosplayers == '3':
     uno = input('Jugador 1, escoja su personaje: Warrior, Magician, Hereje, Maldi, Thief, Shapeshifter, Mace, Healer, Fires, Snake Charner, Apostador, Natural, Diablillo, Support, Chiquitin')
-    dos = input('Jugador 2, escoja su personaje: (No repetir)')
-    tres = input('Jugador 3, escoja su personaje:')
+    while True:
+        dos = input('Jugador 2, escoja su personaje: (No repetir)')
+        if dos == uno:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        tres = input('Jugador 3, escoja su personaje:')
+        if tres == uno or tres == dos:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
     if uno.lower() == 'warrior':
         uno = guerrero
     elif uno.lower() == 'magician':
@@ -11711,6 +12182,11 @@ elif cuantosplayers == '3':
         tres.preci3 -= 20
         tres.precicura -= 20
         tres.precienergia -= 20
+    elif escenario == 12:
+        print ('Una infinita fuente de energia abastece a todos los personajes con 100k de energia')
+        uno.energy += 100000
+        dos.energy += 100000
+        tres.energy += 100000
     elif escenario == 10:
         for escenario10_2 in range (1):
             print ('La pelea está patas arriba y los menos veloces atacan primero')
@@ -11868,9 +12344,24 @@ elif cuantosplayers == '3':
 
 elif cuantosplayers == '4':
     uno = input('Jugador 1, escoja su personaje: Warrior, Magician, Hereje, Maldi, Thief, Shapeshifter, Mace, Healer, Fires, Snake Charner, Apostador, Natural, Diablillo, Support, Chiquitin')
-    dos = input('Jugador 2, escoja su personaje: (No repetir)')
-    tres = input('Jugador 3, escoja su personaje:')
-    cuatro = input('Jugador 4, escoja su personaje: (Idea: Puedes hacer 2v2 :D)')
+    while True:
+        dos = input('Jugador 2, escoja su personaje: (No repetir)')
+        if dos == uno:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        tres = input('Jugador 3, escoja su personaje:')
+        if tres == uno or tres == dos:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        cuatro = input('Jugador 4, escoja su personaje:')
+        if cuatro == uno or cuatro == dos or cuatro == tres:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
     if uno.lower() == 'warrior':
         uno = guerrero
     elif uno.lower() == 'magician':
@@ -11991,7 +12482,7 @@ elif cuantosplayers == '4':
         cuatro = support
     elif cuatro.lower() == 'chiquitin':
         cuatro = chiquitin
-    escenario = randint (1, 11)
+    escenario = randint (1, 12)
     if escenario == 1 or escenario == 2 or escenario == 3:
         print ('La pelea se desarrolla en una bella pradera (no pasa nada)')
     elif escenario == 4:
@@ -12082,6 +12573,12 @@ elif cuantosplayers == '4':
         cuatro.preci3 -= 20
         cuatro.precicura -= 20
         cuatro.precienergia -= 20
+    elif escenario == 12:
+        print ('Una infinita fuente de energia abastece a todos los personajes con 100k de energia')
+        uno.energy += 100000
+        dos.energy += 100000
+        tres.energy += 100000
+        cuatro.energy += 100000
     elif escenario == 10:
         for escenario10_2 in range (1):
             print ('La pelea está patas arriba y los menos veloces atacan primero')
@@ -12578,12 +13075,38 @@ elif cuantosplayers == '4':
                 break
 
 elif cuantosplayers.lower() == 'atraco':
+    print ('(Para poner de objetivo a una caja escribe "caja roja / caja azul")')
     uno = input('Jugador 1 (Equipo azul), escoja su personaje: Warrior, Magician, Hereje, Maldi, Thief, Shapeshifter, Mace, Healer, Fires, Snake Charner, Apostador, Natural, Diablillo, Support, Chiquitin')
-    dos = input('Jugador 2 (Equipo rojo), escoja su personaje: (No repetir)')
-    tres = input('Jugador 3 (Equipo azul), escoja su personaje:')
-    cuatro = input('Jugador 4 (Equipo rojo), escoja su personaje:')
-    cinco = input('Jugador 5 (Equipo azul), escoja su personaje:')
-    seis = input('Jugador 6 (Equipo rojo), escoja su personaje:')
+    while True:
+        cuatro = input('Jugador 4 (Equipo rojo), escoja su personaje: (No repetir)')
+        if cuatro == uno:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        dos = input('Jugador 2 (Equipo azul), escoja su personaje:')
+        if dos == uno or dos == cuatro:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        cinco = input('Jugador 5 (Equipo rojo), escoja su personaje:')
+        if cinco == uno or cinco == dos or cinco == cuatro:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        tres = input('Jugador 3 (Equipo azul), escoja su personaje:')
+        if tres == uno or tres == dos or tres == cuatro or tres == cinco:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
+    while True:
+        seis = input('Jugador 6 (Equipo rojo), escoja su personaje:')
+        if seis == uno or seis == dos or seis == cuatro or seis == cinco or seis == tres:
+            print ('No se pueden repetir personajes!!')
+        else:
+            break
     if uno.lower() == 'warrior':
         uno = guerrero
     elif uno.lower() == 'magician':
@@ -12765,7 +13288,7 @@ elif cuantosplayers.lower() == 'atraco':
     elif seis.lower() == 'chiquitin':
         seis = chiquitin
 
-    escenario = randint (1, 10)
+    escenario = randint (1, 11)
     if escenario == 1 or escenario == 2 or escenario == 3:
         print ('La pelea se desarrolla en una bella pradera (no pasa nada)')
     elif escenario == 4:
@@ -12896,6 +13419,14 @@ elif cuantosplayers.lower() == 'atraco':
         seis.preci3 -= 20
         seis.precicura -= 20
         seis.precienergia -= 20
+    elif escenario == 11:
+        print ('Una infinita fuente de energia abastece a todos los personajes con 100k de energia')
+        uno.energy += 100000
+        dos.energy += 100000
+        tres.energy += 100000
+        cuatro.energy += 100000
+        cinco.energy += 100000
+        seis.energy += 100000
     elif escenario == 10:
         for escenario10_2 in range (1):
             print ('La pelea está patas arriba y los menos veloces atacan primero')
@@ -12903,6 +13434,8 @@ elif cuantosplayers.lower() == 'atraco':
             dos.hello()
             tres.hello()
             cuatro.hello()
+            cinco.hello()
+            seis.hello()
             velocities = list()
             velocities.append (uno.velocity)
             velocities.append (dos.velocity)
@@ -13090,7 +13623,7 @@ elif cuantosplayers.lower() == 'atraco':
                 playfive6atraco()
             if first == seis.velocity:
                 playsix6atraco ()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0 :
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
@@ -13111,7 +13644,7 @@ elif cuantosplayers.lower() == 'atraco':
                 playfive6atraco()
             if second == seis.velocity:
                 playsix6atraco ()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0:
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
@@ -13132,7 +13665,7 @@ elif cuantosplayers.lower() == 'atraco':
                 playfive6atraco()
             if third == seis.velocity:
                 playsix6atraco ()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0:
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
@@ -13153,7 +13686,7 @@ elif cuantosplayers.lower() == 'atraco':
                 playfive6atraco()
             if fourth == seis.velocity:
                 playsix6atraco ()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0:
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
@@ -13174,7 +13707,7 @@ elif cuantosplayers.lower() == 'atraco':
                 playfive6atraco()
             if fiveth == seis.velocity:
                 playsix6atraco ()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0:
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
@@ -13195,7 +13728,7 @@ elif cuantosplayers.lower() == 'atraco':
                 playfive6atraco()
             if sixth == seis.velocity:
                 playsix6atraco ()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0:
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
@@ -13206,7 +13739,7 @@ elif cuantosplayers.lower() == 'atraco':
                 break
             boxred.turno()
             boxblue.turno()
-            if boxblue.health <= 0 and boxred.health:
+            if boxblue.health <= 0 and boxred.health <= 0:
                 print ('Hay empate debido a una destrucción mutua de ambas cajas')
                 break
             elif boxred.health <= 0:
