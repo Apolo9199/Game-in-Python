@@ -7198,7 +7198,7 @@ class Thief ():
                                 self.health -= 800
                             self.energy += 3
                         else:
-                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < maxhealth:
+                            if self.health >= self.maxhealth - 80 * (self.power/2) and self.health < self.maxhealth:
                                 print ('Te pones una venda que te cura toda la vida')
                                 self.health = self.maxhealth
                                 if self.carga_sangrado > 0:
